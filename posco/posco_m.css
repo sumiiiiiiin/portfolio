@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 :root {
   --font-size-14: 0.875rem;
   --font-size-17: 1.063rem;
@@ -29,7 +28,6 @@
   color: #fff;
 }
 
-
 /***** contents *****/
 
 body {
@@ -47,7 +45,6 @@ body > div {
   position: relative;
   z-index: 2;
 }
-
 
 /***** header-menu *****/
 header {
@@ -86,7 +83,6 @@ header .header-wrapper .posco-utill {
   display: none;
 }
 
-
 /***** main *****/
 .main1 {
   background-color: #fff;
@@ -116,7 +112,6 @@ header .header-wrapper .posco-utill {
   font-size: var(--font-size-14);
   margin: 35px 0;
 }
-
 
 /***** 탄소 section1 *****/
 .hyrex {
@@ -171,7 +166,6 @@ header .header-wrapper .posco-utill {
   font-size: var(--font-size-20);
 }
 
-
 /***** 녹색지구 section2 *****/
 .greenate {
   background-color: #fff;
@@ -215,7 +209,6 @@ header .header-wrapper .posco-utill {
   opacity: 0.5;
 } */
 
-
 /***** 탄소중립 section3 *****/
 .posco-asia {
   width: 100%;
@@ -246,7 +239,6 @@ header .header-wrapper .posco-utill {
 .posco-asia .posco-asia-sub p:last-child {
   margin: 15px 0 20px 0;
 }
-
 
 /***** 탄소중립 section3 로고 *****/
 .posco-asia-img-box .left {
@@ -286,7 +278,6 @@ header .header-wrapper .posco-utill {
   text-indent: -9999px;
   height: 30%;
 }
-
 
 /***** 철강사 section4 *****/
 .global {
@@ -339,7 +330,6 @@ header .header-wrapper .posco-utill {
   margin-bottom: 40px;
 }
 
-
 /***** footer *****/
 .footer {
   width: 100%;
@@ -350,7 +340,7 @@ header .header-wrapper .posco-utill {
 
   position: sticky;
   bottom: 0;
-  z-index: 1;
+  z-index: -9999;
 }
 .footer .footer-nav li {
   margin: 5px;
