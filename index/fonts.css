@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-/* Playfair Display , sans-serif; */
+/* 메인 영어 Playfair Display , sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap');
 
-/* 'NeueHaasDisplay', sans-serif; */
+/* 서브 영어 'NeueHaasDisplay', sans-serif; */
 @font-face {
   font-family: 'Neue Haas Display';
   src: url('../assets/fonts/NeueHaasDisplayRoman.woff2') format('woff2');
@@ -28,14 +28,7 @@
   font-display: swap;
 }
 
-/* 카테고리 한글 제목 fonts 결정하기 */
-@font-face {
-  font-family: 'Cafe24Danjunghae-v2.0';
-  src: url('../assets/fonts/Cafe24Danjunghae-v2.0.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
+/* 기술 설명 및 about 한글 fonts */
 @font-face {
   font-family: 'HANAMDAUM';
   src: url('../assets/fonts/HANAMDAUM_Body.woff2') format('woff2');
@@ -43,6 +36,7 @@
   font-style: normal;
 }
 
+/* 카테고리 한글 제목 fonts 결정하기 */
 @font-face {
   font-family: 'LeferiPointSpecial';
   src: url('../assets/fonts/LeferiPointSpecial.woff2') format('woff2');

@@ -7,8 +7,11 @@
     <title>portfolio</title>
     <!-- reset -->
     <link rel="stylesheet" href="../common/reset.css">
+
     <!-- 폰트 -->
     <link rel="stylesheet" href="./fonts.css">
+
+    <!-- favicon -->
 
     <!-- 오픈그래피 -->
     <meta property="og:title" content="PORTFOLIO">
@@ -18,14 +21,18 @@
 
     <!-- 내 style css -->
     <link rel="stylesheet" href="index.css">
-    <script defe src="./index.js"></script>
+
+    <!-- jQuery -->
     <script src="../common/jquery-3.7.0.min.js"></script>
+
+    <!-- 내가 쓴 js -->
+    <script defe src="./index.js"></script>
 </head>
 
 <body>
     <!-- header 포트폴리오txt + 깃허브btn -->
     <header>
-        <div class="img-area">
+        <div class="portfolio_svg">
 
             <svg viewBox="0 0 1872 361" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -61,6 +68,7 @@
             <!-- <img src="./images/main_txt.svg" alt="portfolio svg로 삽입" class="tracking-in-expand-fwd "> -->
         </div>
 
+        <!-- 깃허브 바로가기 btn -->
         <div class="git_btn">
             <a href="https://github.com/sumiiiiiiin/portfolio" target="_blank">git hub</a>
         </div>
@@ -68,14 +76,14 @@
     </header>
 
 
-    <!-- main, 포트폴리오 글씨 아래 영역 -->
+    <!----- main, 포트폴리오 글씨 아래 영역 ----->
     <main class="main-txt">
         <div class="main-txt2 layout-wrapper">
             <h3>I can do it, Be able to do!</h3>
             <p class="name"> Web Publisher LEESUMIN</p>
 
             <div class="main-mail">
-                <p><span class="mail_bold">contact:</span> smlee890@hanmail.net</p>
+                <p><span class="mail_bold">contact&nbsp;&nbsp;:</span>&nbsp;&nbsp;smlee890@hanmail.net</p>
             </div>
 
             <div class="explore-svg">
@@ -99,15 +107,17 @@
     <div class="selected-line">
         <ul class="selected layout-wrapper">
             <li>selected category</li>
-            <li>see all <svg width="34" height="10" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M44 9L29 0.339746V17.6603L44 9ZM0 10.5H30.5V7.5H0V10.5Z" fill="#7F9E67" />
-                </svg></li>
+            <li><a href="#category">see all <svg width="34" height="10" viewBox="0 0 44 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 9L29 0.339746V17.6603L44 9ZM0 10.5H30.5V7.5H0V10.5Z" fill="#7F9E67" />
+                    </svg></a> </li>
         </ul>
     </div>
 
 
-    <!-- div2, 메뉴 카테고리 -->
-    <div class="main-category">
+    <!----- div2, 메뉴 카테고리 ----->
+    <!-- 상위 영역에서 see all 클릭시 해당 영역으로 이동하기 위해 id 추가 -->
+    <div class="main-category" id="category">
 
         <div class="category-txt">
             <ul class="category category1 layout-wrapper ">
@@ -120,15 +130,16 @@
         <div class="category-txt">
             <ul class="category category2 layout-wrapper">
                 <li>02</li>
-                <li><a href="#">project</a></li>
-                <li class="focus-in-expand-fwd"><a href="#">view more</a></li>
+                <li><a href="../JAVAS_project/index.html">JAVAS</a></li>
+                <li class="focus-in-expand-fwd"><a href="https://2023javas.github.io/JAVAS_project/index">view more</a>
+                </li>
             </ul>
         </div>
 
         <div class="category-txt">
             <ul class="category category3 layout-wrapper">
                 <li>03</li>
-                <li><a href="https://sumiiiiiiin.github.io/portfolio/posco/posco" target="_blank">posco</a></li>
+                <li><a href="../posco/posco.html" target="_blank">posco</a></li>
                 <li class="focus-in-expand-fwd"><a href="https://sumiiiiiiin.github.io/portfolio/posco/posco"
                         target="_blank">view more</a></li>
             </ul>
@@ -152,7 +163,7 @@
     </div>
 
 
-    <!-- div3, skill 설명 -->
+    <!----- div3, skill 설명 ----->
     <div class="skill">
         <div class="skill-div layout-wrapper">
 
@@ -175,8 +186,10 @@
                     <div class="skill-top2">
                         <p>B. JavaScript & jQuery</p>
                         <ul>
-                            <li>ES+6 문법</li>
-                            <li>비동기 통신 Ajax를 이용한 JSON 데이터 활용</li>
+                            <li>ES+6 문법 사용 및 이해</li>
+                            <li>비동기 통신(AJAX)을 이용한 JSON 데이터 활용</li>
+                            <li>JavaScript를 이용한 scroll 이벤트 적용</li>
+                            <li>JavaScript를 이용한 swiper 사용</li>
                         </ul>
                     </div>
 
@@ -212,17 +225,17 @@
         </div>
     </div>
 
-    <!-- div4, 키워드 -->
+    <!----- div4, 키워드 ----->
     <div class="keyword">
         <div class="keyword-txt">
             <p>Not give up</p>
-            <p>Effort</p>
             <p>Steadiness</p>
+            <p>Effort</p>
         </div>
     </div>
 
 
-    <!-- footer about 페이지 -->
+    <!----- footer about 페이지 ----->
     <footer>
         <div class="about-me layout-wrapper">
 
@@ -230,11 +243,10 @@
 
             <div class="about-txt">
                 <h3>About sumin</h3>
-                <p>안녕하세요. <br>"할 수 있다. 하면 된다" 당찬 포부처럼 포기하지 않는 신입 웹퍼블리셔 <span><strong>이수민</strong></span>입니다. <br>새로운 일에
-                    도전하고 이루어낸
-                    목표에서 오는 뿌듯함과 성취감이 좋아
-                    웹
-                    퍼블리셔를 선택하고 도전했습니다. <br>변화에 맞게 꾸준히 노력하고 성장하며 현실에 안주하지 않는 웹 퍼블리셔가 되겠습니다. </p>
+                <p>안녕하세요. <br>"할 수 있다. 하면 된다" 당찬 포부처럼 포기하지 않는 신입 웹퍼블리셔 <span><strong>이수민</strong></span>입니다. <br>노력한 만큼
+                    나타나고 도전하여 이뤄낸 결과물에서 오는 뿌듯함과 성취감이 좋아 웹 퍼블리셔를 선택하고 도전했습니다. <br>변화에 맞게 꾸준히 노력하고 성장하며 현실에 안주하지 않는 웹
+                    퍼블리셔가
+                    되겠습니다. </p>
             </div>
         </div>
     </footer>
