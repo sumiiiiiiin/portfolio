@@ -393,11 +393,14 @@ footer .about-me .about-txt .intro {
   font-family: var(--ko-font);
   line-height: 2;
   word-break: break-all;
-  margin-left: 1vw;
+  margin-left: 5vw;
 }
 footer .about-me .about-txt p:first-child {
   margin-bottom: 1vw;
 }
 footer .about-me .about-txt p span {
   font-size: var(--font-size-25);
+}
+footer .about-me .about-txt p:last-child {
+  margin-top: 1vw;
 }
