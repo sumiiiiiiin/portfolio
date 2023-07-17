@@ -12,3 +12,10 @@ $(window).on('scroll', () => {
   });
 });
 // 안돼 왜안돼...계속 안돼..그냥 안돼...
+
+// 버튼 스타일
+// $(".hover").mouseleave(
+//   function() {
+//     $(this).removeClass("hover");
+//   }
+// );

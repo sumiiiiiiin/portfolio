@@ -19,7 +19,70 @@ header .portfolio_svg svg {
 
 /*** 깃허브 버튼 ***/
 
-header .git_btn a {
+.git_btn a{
+  display: block;
+}
+.git_btn {
+  background-color: #7f9e67;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+   font-family:var(--en-font) /*'BenchNine', Arial, sans-serif*/; 
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 8px 20px 8px;
+  position: relative;
+  /* text-transform: uppercase; */
+  /* font-weight: 700; */
+
+  position: fixed;
+right: 0.5%;
+top: 0;
+}
+.git_btn:before,
+.git_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.git_btn:before {
+  border-color: #7f9e67;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.git_btn:after {
+  border-bottom-width: 2px;
+  border-color: #7f9e67;
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+
+/*
+ .git_btn:hover,
+.git_btn.hover {
+  background-color: #7f9e67;
+}
+.git_btn:hover:before,
+.git_btn.hover:before,
+.git_btn:hover:after,
+.git_btn.hover:after {
+  height: 100%;
+  width: 100%;
+} */
+/* header .git_btn a {
   font-family: var(--en-font);
   text-transform: capitalize;
   font-weight: 700;
@@ -41,7 +104,7 @@ header .git_btn a {
 header .git_btn a:hover {
   transform: translateX(15px);
   transition: 0.8s;
-}
+} */
 
 /***** main *****/
 
