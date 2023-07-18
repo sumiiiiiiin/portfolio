@@ -1,26 +1,37 @@
 // 스크롤에 따른 nav 변화
-$(window).on('scroll', () => {
-    const slideBox = $('#slide_box').offset().top;
-    console.log(slideBox);
-  
-    if (scrollY > slideBox) {
-      $('.posco-nav').addClass('active');
-      $('#global_nav').css({ top: 80 });
-    } else {
-      $('.posco-nav').removeClass('active');
-      $('#global_nav').css({ top: 150 });
-    }
-  });
-  
 
 //스크롤시 헤더바 변경 230629 scrollY 또는 230630 scrollEx4 참고하여 해보기
 
-// 브랜드 로고 클릭시 로고가 바뀜
-$('.posco-asia-img li').on('click', (evt) => {
-    const target = $(evt.target);
-    // const imgSrc = target.attr('src'); // 내가 클릭한 그 li의 src 속성을 가져와라 
-    // const imgAlt = target.attr('alt');
+  $(window).on('scroll', () => {
+    // console.log(scrollY);
+    if (scrollY > 200) {
+      $('header').css({
+        width:'80%',
+        borderRadius:'25px',
+        margin:'0 auto',
+        opacity: 1,
+      });
+    } else {
+      $('header').css({
+        width:'100%',   
+        opacity: 1,
+        borderRadius:'0',
+        // marginTop:'1vw'
+    
+      });
+    }
+  });
 
-    $('.posco-asia-img').attr({ src: imgSrc, alt: imgAlt });
+  // 햄버거버튼
+  $(document).ready(function () {
+    $('.ham_btn').on('click', (e) => {
+      e.preventDefault();
+      $('.menu_wrapper_list').slideToggle();
+      $('.menu_wrapper_list').toggleClass('hide');
+    });
+  });
 
-});
+  // aos js
+  AOS.init();
+
+  

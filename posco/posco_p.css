@@ -4,73 +4,25 @@
 
 
 /***** header *****/
-header .header-wrapper .posco-nav {
-  display: flex;
-}
-header .header-wrapper .posco-utill {
-  display: flex;
-}
-header .header-wrapper .posco-nav li:nth-child(3) {
-  margin-right: 40px;
-}
-header .header-wrapper .posco-nav li {
-  width: 15%;
-}
-header .header-wrapper .posco-nav li:hover {
-  cursor: pointer;
-  font-weight: bold;
-  transform: scale(1.1);
-}
-header .header-wrapper .posco-utill li {
-  margin-right: 10px;
-}
-header .header-wrapper .posco-utill li:hover {
-  cursor: pointer;
-}
-header .header-wrapper .posco-utill li img {
-  filter: opacity(0.5) drop-shadow(0 0 0 #000);
-}
-header .header-wrapper .posco-utill li img:hover {
-  filter: opacity(0.5) drop-shadow(0 0 0 #1f2353);
-}
-header .header-wrapper .posco-utill-ham {
-  display: none;
-}
-header .header-wrapper .posco-utill li:hover {
-  cursor: pointer;
-  font-weight: bold;
-}
 
-/***** 스크롤시 header-nav 변경 *****/
-header h1.active{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.8) ;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border-radius: 8px;
-    -webkit-animation: ctSmallLogo 1s ease;
-    animation: ctSmallLogo 1s ease;
-    box-shadow: 20px 20px 40px rgba(31, 35, 83, 0.3);
-    display: flex;
-    width: 150px;
-    justify-content: center;
-}
-header .header-wrapper .posco-nav.active {
-  padding: 10px 16px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  box-shadow: 20px 20px 40px rgba(31, 35, 83, 0.3);
+header .header_nav .menu_nav{
   display: flex;
+ }
+ header .header_nav .menu_nav li:hover{
+  font-weight: bold;
+  transition: 0.5s;
+  transform: translateY(-5px);
+ }
+ header .header_nav .header_utill{
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 12px;
+ }
+ header .header_nav .header_utill img {
+  display: flex;
 }
-header .header-wrapper .posco-utill.active{
-  align-items: center;
-    gap: 12px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0, 1);
+ header .header_nav .ham_btn{
+  display: none;
 }
 
 /***** main *****/
@@ -255,6 +207,7 @@ header .header-wrapper .posco-utill.active{
 
 
 /*****footer*****/
+
 .footer .footer-nav li:hover {
   cursor: pointer;
 }

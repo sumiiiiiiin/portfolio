@@ -35,7 +35,7 @@ body {
   color: var(--main-color);
 }
 .layout-wrapper {
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
 }
 .flex {
@@ -43,45 +43,110 @@ body {
 }
 body > div {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 /***** header-menu *****/
-header {
+header{
   width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 3;
+  height: 9vh;
+
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   box-shadow: 20px 20px 40px rgba(31, 35, 83, 0.3);
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
-.header-wrapper h1 {
-  background: url(./images/logo_posoco_blue.png) no-repeat 50% / contain;
-  text-indent: -9999%;
-  width: 90px;
-}
-.header-wrapper h1:hover {
-  cursor: pointer;
-}
-header .header-wrapper {
-  width: 96%;
-  height: 80px;
-  margin: 0 auto;
+header .header_nav{
+  line-height: 9vh;
   justify-content: space-between;
   align-items: center;
 }
-header .header-wrapper .posco-nav {
-  width: 40%;
-  justify-content: flex-end; /* 옆으로 옮기고 싶음*/
-  display: none;
+header .header_nav:hover{
+  cursor: pointer;
 }
-header .header-wrapper .posco-utill {
-  font-size: var(--font-size-14);
+header .header_nav h1{
+    background: url(./images/logo_posoco_blue.png) no-repeat 50% / contain;
+  width: 140px;
+  height: 30px;
+  text-indent: -9999px;
+ }
+ header .header_nav .menu_nav{
+  display: none;
+ }
+ header .header_nav .menu_nav li{
+  margin: 0 1vw;
+ }
+ header .header_nav .menu_nav li:hover{
+  font-weight: bold;
+  transition: 0.3s;
+  transform: translateY(-5px);
+ }
+ header .header_nav .header_utill{
+  justify-content: space-evenly;
+  align-items: center;
+
+  display: none;
+ }
+ header .header_nav .header_utill li{
+  margin: 0 0.7vw;
+ }
+ header .header_nav .header_utill li:hover{
+  font-weight: bold;
+ }
+ header .header_nav .header_utill img {
+  filter: opacity(0.5) drop-shadow(0 0 #1f2353);
+
+  width: 20px;
+  height: 20px;
+  line-height: 10vh;
+  
+  display: flex;
+  justify-content: center;
+}
+header .header_nav .header_utill img:hover{
+  filter: opacity(0.5) drop-shadow(0 0 0 #000);
+}
+header .header_nav .ham_btn{
   justify-content: center;
   align-items: center;
-  display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***** main *****/
 .main1 {
@@ -340,7 +405,7 @@ header .header-wrapper .posco-utill {
 
   position: sticky;
   bottom: 0;
-  z-index: -9999;
+  z-index: -5;
 }
 .footer .footer-nav li {
   margin: 5px;
@@ -363,5 +428,5 @@ header .header-wrapper .posco-utill {
   padding: 10px 15px;
 
   position: relative;
-  z-index: 50;
+  z-index: 600;
 }

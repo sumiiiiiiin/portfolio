@@ -25,6 +25,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- 내가 쓴 style css -->
     <!-- style 모바일-->
     <link rel="stylesheet" href="./posco_m.css">
@@ -36,6 +39,12 @@
     <!-- jQuery -->
     <script src="../common/jquery-3.7.0.min.js"></script>
 
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper js -->
+    <script src="../common/swiper-bundle.min.js"></script>
+
     <!-- 내가 쓴 js -->
     <script defer src="./posco.js"></script>
 </head>
@@ -43,26 +52,25 @@
 <body>
     <!--header-menu-->
     <header>
-        <div class="header-wrapper flex">
-            <h1><a href="/homepage/docs/kor7/jsp/s91a0000001i.jsp">포스코
-                </a>
-            </h1>
-            <menu id="global_nav" class="posco-nav flex">
-                <li>회사소개</li>
-                <li>탄소중립</li>
-                <li>기업시민·ESG</li>
-                <li>재무정보</li>
-                <li>홍보채널</li>
-                <li>신고센터</li>
-                <li>고객지원</li>
+        <div class="header_nav layout-wrapper flex">
+            <h1><a href="https://www.posco.co.kr/homepage/docs/kor6/jsp/s91a0000001i.jsp" target="_blank">로고</a></h1>
+            <menu class="menu_nav flex">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">탄소중립</a></li>
+                <li><a href="#">기업시민</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">홍보채널</a></li>
+                <li><a href="#">신고센터</a></li>
+                <li><a href="#">고객지원</a></li>
             </menu>
-            <ul class="posco-utill flex">
-                <li><img src="./images/ico_lang.png" alt="언어지구본아이콘"></li>
-                <li>KO</li>
+
+            <ul class="header_utill flex">
+                <li><img src="./images/ico_lang.png" alt="언어선택을 위한 지구 아이콘"></li>
+                <li>KR</li>
                 <li>EN</li>
             </ul>
 
-            <div class="posco-utill-ham">
+            <div class="ham_btn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-baseline-density-medium"
                     width="27" height="27" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -72,6 +80,8 @@
                     <path d="M4 4h16" />
                 </svg>
             </div>
+
+
         </div>
     </header>
 
@@ -100,17 +110,17 @@
             <p class="hyrex-btn">HyREX 상용화 계획</p>
         </div>
         <div class="hyrex-txt layout-wrapper">
-            <ul>
+            <ul data-aos="flip-left" data-aos-duration="1000">
                 <li>01</li>
                 <li>유동 환원 방식</li>
                 <li>유동 환원로는 고온의 환원가스가 환원로 하부의 분산판을 통해 골고루 분사됩니다.가루 상태의 철광석이 공중으로 뜨게 되고 서로 뒤섞이며 환원반응이 일어납니다.</li>
             </ul>
-            <ul>
+            <ul data-aos="flip-left" data-aos-duration="1500">
                 <li>02</li>
                 <li>원료의 특징</li>
                 <li>HyREX는 자연상태의 저품위 분철광석을 그대로 사용합니다. 철광석을 파쇄, 선별하여 고품위 펠렛으로 제조하여 사용하며 원료 제한 없이 쇳물을 생산할 수 있습니다.</li>
             </ul>
-            <ul>
+            <ul data-aos="flip-left" data-aos-duration="2000">
                 <li>03</li>
                 <li>열공급에 유리한 설비 기술</li>
                 <li>수소를 이용해 철광석을 환원을 할 경우 흡열반응으로 열이 쉽게 부족해져 원활한 환원을 위해서는 외부에서 열을 지속적으로 공급 제어해야 합니다.</li>
@@ -175,13 +185,13 @@
                 </div>
 
                 <div class="posco-asia-img-box layout-wrapper">
-                    <div class="posco-asia-img left">
+                    <div class="posco-asia-img left" data-aos="zoom-in" data-aos-du>
                         이미지1
                     </div>
                     <ul class="posco-asia-img right">
-                        <li>이미지3</li>
-                        <li>이미지4</li>
-                        <li>이미지5</li>
+                        <li data-aos="fade-left" data-aos-duration="1000">이미지3</li>
+                        <li data-aos="fade-left" data-aos-duration="1000">이미지4</li>
+                        <li data-aos="fade-left" data-aos-duration="1000">이미지5</li>
                     </ul>
                 </div>
             </div>
@@ -233,7 +243,7 @@
             </ul>
 
             <div class="footer-btn">
-                <a href="https://github.com/sumiiiiiiin/portpolio">내 포트폴리오 바로가기</a>
+                <a href="https://sumiiiiiiin.github.io/portfolio/index/index" target="_blank">내 포트폴리오 바로가기</a>
             </div>
 
         </div>
