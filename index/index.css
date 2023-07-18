@@ -24,8 +24,8 @@ header .git_btn {
   text-transform: uppercase;
   font-weight: bold;
 
-  position: absolute;
-  right: 2%;
+  position: fixed;
+  right: 1%;
   top: 2%;
 }
 
@@ -73,8 +73,6 @@ header .git_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-
-
 
 /***** main *****/
 
@@ -184,10 +182,9 @@ header .git_btn span:hover:after {
   display: flex;
   position: relative;
 }
-.category-txt .category3{
+.category-txt .category3 {
   font-family: 'LeferiPointSpecial';
 }
-
 
 /*** viewmore-animation ***/
 .focus-in-expand-fwd {
