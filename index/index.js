@@ -1,3 +1,7 @@
+// aos
+AOS.init();
+
+
 // 메인 portpolio svg 움직이기
 const wave_svg = document.querySelectorAll(div);
 $(window).on('scroll', () => {

@@ -18,93 +18,63 @@ header .portfolio_svg svg {
 }
 
 /*** 깃허브 버튼 ***/
+header .git_btn {
+  width: 5.35vw;
+  font-family: var(--en-font);
+  text-transform: uppercase;
+  font-weight: bold;
 
-.git_btn a{
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+header .git_btn span {
+  text-align: center;
+  background-color: #7f9e67;
+  color: #fff;
+  height: 2.35vw;
+
+  line-height: 2.35vw;
   display: block;
 }
-.git_btn {
-  background-color: #7f9e67;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-   font-family:var(--en-font) /*'BenchNine', Arial, sans-serif*/; 
-  font-size: 1em;
-  font-size: 22px;
-  line-height: 1em;
-  margin: 15px 40px;
-  outline: none;
-  padding: 8px 20px 8px;
-  position: relative;
-  /* text-transform: uppercase; */
-  /* font-weight: 700; */
-
-  position: fixed;
-right: 0.5%;
-top: 0;
+header .git_btn span a {
+  display: block;
 }
-.git_btn:before,
-.git_btn:after {
-  border-color: transparent;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  border-style: solid;
-  border-width: 0;
-  content: "";
-  height: 24px;
+
+header .git_btn span:hover {
+  background: transparent;
+  color: #7f9e67;
+  box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+    7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+}
+
+header .git_btn span:before,
+header .git_btn span:after {
+  content: '';
   position: absolute;
-  width: 24px;
-}
-.git_btn:before {
-  border-color: #7f9e67;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  right: -5px;
-  top: -5px;
-}
-.git_btn:after {
-  border-bottom-width: 2px;
-  border-color: #7f9e67;
-  border-left-width: 2px;
-  bottom: -5px;
-  left: -5px;
-}
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
 
-/*
- .git_btn:hover,
-.git_btn.hover {
   background-color: #7f9e67;
+  transition: 400ms ease all;
 }
-.git_btn:hover:before,
-.git_btn.hover:before,
-.git_btn:hover:after,
-.git_btn.hover:after {
-  height: 100%;
+
+header .git_btn span:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+header .git_btn span:hover:before,
+header .git_btn span:hover:after {
   width: 100%;
-} */
-/* header .git_btn a {
-  font-family: var(--en-font);
-  text-transform: capitalize;
-  font-weight: 700;
-  font-size: var(--font-size-19);
-  border: 2px solid var(--color);
-  border-radius: 30px;
-  width: 110px;
-  height: 38px;
-  line-height: 35px;
-  text-align: center;
-
-  position: fixed;
-  top: 2%;
-  right: 2%;
-
-  background-color: var(--color);
-  color: #eae1d3;
+  transition: 800ms ease all;
 }
-header .git_btn a:hover {
-  transform: translateX(15px);
-  transition: 0.8s;
-} */
+
+
 
 /***** main *****/
 
@@ -204,23 +174,20 @@ header .git_btn a:hover {
 .category-txt {
   border-bottom: 2px solid var(--color);
 }
-/* 카테고리 선 */
-/* .category-txt::after {
-  content: '';
-  border: 1px solid var(--color);
-  display: block;
-  width: 100%;
-} */
-.category-txt .category {
-  display: flex;
-  position: relative;
-}
 .category-txt:hover {
   color: #eae1d3;
   background-color: rgba(104, 135, 93, 0.636);
   margin: 0;
   transition: 0.5s linear;
 }
+.category-txt .category {
+  display: flex;
+  position: relative;
+}
+.category-txt .category3{
+  font-family: 'LeferiPointSpecial';
+}
+
 
 /*** viewmore-animation ***/
 .focus-in-expand-fwd {
