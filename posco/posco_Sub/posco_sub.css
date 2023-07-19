@@ -1,14 +1,15 @@
 @charset "utf-8";
 
 /* fonts pretendard */
-@import url(../../common/fonts.css);
+/* @import url(../../common/fonts.css); */
+
 /* 공통 스타일 css */
 @import url(../../index/common.css);
 
 body {
   background-color: #f2ede4;
   color: #575f50;
-  font-family: var(--en-font);
+  font-family: var(--ko-font-pr);
 }
 
 /***** 공통 css *****/

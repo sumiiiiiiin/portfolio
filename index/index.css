@@ -253,12 +253,6 @@ header .git_btn span:hover:after {
   margin-left: 50px;
 }
 
-/*** 폰트확인존 카테고리 프로젝트명 한글부분 ***/
-.category-txt .category1 :nth-child(2) {
-  font-family: 'LeferiPointSpecial';
-  /* font-family: 'establish Retrosans'; */
-}
-
 /***** skill *****/
 .skill {
   width: 100%;
