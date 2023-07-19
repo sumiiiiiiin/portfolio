@@ -1,6 +1,7 @@
 @charset " utf-8";
 
-/***** fonts *****/
+/***** fonts prtendard*****/
+@import url(../common/fonts.css);
 
 /* Playfair Display; */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap');
