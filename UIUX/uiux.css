@@ -1,6 +1,6 @@
 @charset "utf-8";
-
-/* @import url(../index/common.css); */
+/* 폰트 pretendard */
+@import url(../common/fonts.css);
 
 body {
   background-color: #f2ede4;
