@@ -436,6 +436,7 @@ main .main_intro .main_intro_img img {
 /***** review *****/
 .review {
   width: 100%;
+  height: 150vh;
 
   position: relative;
 }
@@ -481,7 +482,7 @@ main .main_intro .main_intro_img img {
 
   position: absolute;
   right: 38%;
-  bottom: 3.5%;
+  bottom: 12%;
 }
 .review .footer_btn span {
   text-align: center;
