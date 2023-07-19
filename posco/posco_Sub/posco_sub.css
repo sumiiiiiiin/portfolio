@@ -148,16 +148,18 @@ header .home_btn span:hover:after {
   left: -17%;
 }
 .mainpage .main_intro .main_intro_img .pc {
-  width: 527px;
-  height: 388px;
+  /* width: 527px;
+  height: 388px; */
+  width: 599px;
+  height: 397px;
 }
 .mainpage .main_intro .main_intro_img .tablet {
   width: 410px;
   height: 313px;
 
   position: absolute;
-  right: -12%;
-  top: 25%;
+  right: -18%;
+  top: 30%;
 }
 
 /***** 프로젝트 목표 *****/
