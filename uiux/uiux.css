@@ -6,8 +6,7 @@
 
 body {
   background-color: #f2ede4;
-  /* background-color: #ffffff; */
-  color: #575f50;
+  color: #333;
   font-family: var(--ko-font-pr);
 }
 
@@ -24,7 +23,12 @@ body {
   align-items: center;
 }
 .line {
-  border-bottom: 1px solid #575f50;
+  border-bottom: 1px solid #929292;
+}
+.half-highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #4d6bff6a
+
+  50%);
 }
 
 /***** header home_btn *****/
@@ -86,7 +90,7 @@ header .home_btn span:hover:after {
 main {
   width: 100%;
   height: 80vh;
-  color: #575f50;
+  color: #343434;
 }
 main .main_intro {
   margin-top: 10vw;

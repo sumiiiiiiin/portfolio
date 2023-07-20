@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+/* font pretendard */
+@import url(../common/fonts.css);
+
+/* 공통스타일 css */
+@import url(../index/common.css);
+
+body {
+    background-color: #f2ede4;
+    color: #333;
+    font-family: var(--ko-font-pr);
+  }
+
+/***** 공통 css *****/
+.layout-wrapper {
+    width: 80%;
+    margin: 0px auto;
+  
+    padding: 20px;
+  }
+  .flex {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .line {
+    border-bottom: 1px solid #929292;
+  }
+  .half-highlight {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #d2d0d0
+    50%);
+  }
+
+
+  /***** header home_btn *****/
+header {
+    width: 100%;
+  }
+header .home_btn {
+    width: 5.35vw;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+header .home_btn span {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 2.35vw;
+  
+    line-height: 2.35vw;
+    display: block;
+  }
+header .home_btn span a {
+    display: block;
+  }
+header .home_btn span:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+      7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+  }
+header .home_btn span:before,
+header .home_btn span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+  
+    background-color: #000;
+    transition: 400ms ease all;
+  }
+header .home_btn span:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+header .home_btn span:hover:before,
+header .home_btn span:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
+/***** main_intro *****/
+main{
+    width: 100%;
+    height: 85vh;
+    /* color: #343434; */
+}
+main .main_intro {
+    margin-top: 10vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+main .main_intro h1 {
+    font-size: 3vw;
+    font-weight: 700;
+ }
+main .main_intro p {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+main .img_txt{
+    margin-top: 6vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main .img_txt .intro_txt h2{
+    font-size: 3.2vw;
+    font-weight: 800;
+    line-height: 0.7;
+}
+main .img_txt .intro_txt .small{
+    font-size: 1.7vw;
+}
+main .img_txt img{
+
+    width: 40.1500vw;
+    height: 22.5999vw;
+}
+
+/***** overeview *****/
+.overeview{
+    width: 100%;
+    height: 35vh;
+}
+.overeview .overeview_intro{
+    margin-top: 5vw;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.overeview .overeview_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.overeview .overeview_txt p{
+    /* width: 98%; */
+    font-size: 1vw;
+    
+    margin-bottom: 2vw;
+    line-height: 1.4;
+}
+    
+
+/***** 진행과정 *****/
+.process{
+    width: 100%;
+    height: 80vh;
+}
+.process .process_intro{
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.process .process_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.process .process_intro .process_txt {
+    width: 52%;
+    font-size: 1vw;
+  }
+.process .process_intro .process_txt .process_txt_top p {
+    line-height: 2.5vw;
+  }
+.process .process_intro .process_txt ul {
+    margin-left: 2vw;
+  }
+.process .process_intro .process_txt .process_txt_top ul li {
+    line-height: 2vw;
+  }
+.process .process_intro .process_work {
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+.process .process_intro .process_work h3 {
+    font-weight: bold;
+    font-size: 1.2vw;
+  }
+.process .process_intro .process_work ul {
+    width: 70%;
+  }
+.process .process_intro .process_work ul li {
+    margin-bottom: 1vw;
+  }
+
+/***** design concept *****/
+.design{
+    width: 100%;
+    height: 100vh;
+}
+.design .design_intro{
+    margin-top: 5vw;
+}
+.design .design_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.design .design_box{
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    justify-content: space-between;
+    align-items:center;
+}
+.design .design_box img{
+    width: 32.555vw;
+    height: 18.2vw;
+    box-shadow: 7px 5px 6px 2px rgba(166,166,166,0.85);
+}
+.design .design_box .design_txt{
+    width: 48%;
+}
+.design .design_box .design_txt p{
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+}
+.design .design_box .design_txt p:first-child{
+    line-height: 1.4;
+}
+.design .style{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.design .style .bold {
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 50px;
+}
+.design .style .txt_size {
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.design .style .color_tag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
+
+/***** publishing *****/
+.publishing{
+    width: 100%;
+    height: 55vh;
+}
+.publishing .publishing_intro{
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.publishing .publishing_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.publishing .publishing_right{
+    width: 45%;
+}
+.publishing .publishing_right .publishing_txt{
+    margin-top: 5vw;
+    margin-left: 1vw;
+}
+.publishing .publishing_right .publishing_txt li{
+    font-size: 1vw;
+    list-style: decimal;
+    line-height: 2;
+}
+
+/***** 기술서 보러가기 *****/
+.goto{
+
+width: 35%;
+border-bottom: 1px solid #000;
+}
+.goto:hover{
+    /* color: #0d2dc9; */
+font-weight: 800;
+transition: 0.4s;
+transform: translate(4%);
+}
+
+
+
+
+/* 퍼블리싱가이드 btn */
+.guide_btn {
+    width: 12vw;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    position: relative;
+
+  }
+.guide_btn span {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 2.35vw;
+  
+    line-height: 2.35vw;
+    display: block;
+  }
+.guide_btn span a {
+    display: block;
+  }
+.guide_btn span:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+      7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+  }
+.guide_btn span:before,
+.guide_btn span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    transition: 400ms ease all;
+  }
+.guide_btn span:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+.guide_btn span:hover:before,
+.guide_btn span:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
+
+/***** problems&solution *****/
+.problem{
+    width: 100%;
+    height: 100vh;
+}
+.problem .problem_intro{
+    margin-top: 5vw;
+}
+.problem .problem_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.problem .problem_txt{
+    width: 47%;
+    float: right;
+}
+.problem .problem_txt .txt_box{
+    margin: 5vw 0;
+}
+.problem .problem_txt .txt_box h3{
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+}
+.problem .problem_txt .txt_box p{
+    font-size: 0.9vw;
+    line-height: 1.4;
+    margin-left: 1vw;
+}
+
+
+/***** review  *****/
+.review{
+    width: 100%;
+    height: 160vh;
+
+    position: relative;
+}
+.review .review_intro{
+    margin-top: 5vw;
+}
+.review .review_intro h1{
+    font-weight: 800;
+    font-size: 2.25vw;
+}
+.review .txt_box{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.review .txt_box h3{
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+.review .txt_box .box_right{
+    width: 46%;
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+    line-height: 1.6;
+}
+.review .txt_box .box_right p{
+    margin-bottom: 2vw;
+}
+
+
+/***** 사이트보러가기 btn *****/
+.review .footer_btn {
+    width: 10vw;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+    position: absolute;
+    right: 37%;
+    bottom: 10%;
+  }
+.review .footer_btn span {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 2.35vw;
+  
+    line-height: 2.35vw;
+    display: block;
+  }
+.review .footer_btn span a {
+    display: block;
+  }
+  
+.review .footer_btn span:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+      7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+  }
+  
+.review .footer_btn span:before,
+.review .footer_btn span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    transition: 400ms ease all;
+}
+  .review .footer_btn span:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+.review .footer_btn span:hover:before,
+.review .footer_btn span:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
