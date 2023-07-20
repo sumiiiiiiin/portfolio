@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../common/fonts.css">
 
     <!-- AOS css -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- 내가 쓴 css -->
     <link rel="stylesheet" href="./javas_sub.css">
@@ -26,7 +26,7 @@
     <script src="../common/jquery-3.7.0.min.js"></script>
 
     <!-- AOS js -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- swiper js -->
     <script src="../common/swiper-bundle.min.js"></script>
@@ -67,7 +67,7 @@
 
             <h1>Overeview</h1>
 
-            <div class="overeview_txt">
+            <div class="overeview_txt" data-aos="fade-left" data-aos-duration="1000">
                 <p>기존 사이트의 디자인이 사용자들의 이목을 끄는데 다소 부족하다는 생각이 들었습니다. </p>
                 <p>선정한 사이트가 호텔, 리조트 사이트인 만큼 이미지에 맞게 깔끔하고 고급스러운 이미지를 콘셉트로 디자인을 진행했습니다.<br>또한 비슷한 페이지가 많아 디자인의 통일성을 주고 다양한
                     스크립트 효과를 적용하는 것을 목표로 삼았습니다.</p>
@@ -83,7 +83,7 @@
             <h1>진행과정</h1>
 
             <div class="process_txt">
-                <div class="process_txt_top">
+                <div class="process_txt_top" data-aos="fade-left" data-aos-duration="1000">
                     <p>1. 팀 결성 및 리더, 깃허브 관리자 선정<br>
                         2. 리디자인 사이트 선정<br>
                         3. 리디자인 사이트 디자인 및 수정, 컨펌<br>
@@ -96,7 +96,7 @@
 
                 </div>
 
-                <div class="process_work flex">
+                <div class="process_work flex" data-aos="fade-left" data-aos-duration="1000">
                     <h3><span class="half-highlight">담당업무</span></h3>
                     <ul>
                         <li>팀원들 간의 정보 및 의견 조율, 전달</li>
@@ -116,9 +116,10 @@
             <h1>Design concept</h1>
 
             <div class="design_box flex">
-                <img src="./images/javas_sub_design.png" alt="베이힐 설명 페이지 화면 캡쳐">
+                <img src="./images/javas_sub_design.png" alt="베이힐 설명 페이지 화면 캡쳐" data-aos="zoom-in"
+                    data-aos-duration="1000">
 
-                <div class="design_txt">
+                <div class="design_txt" data-aos="fade-left" data-aos-duration="1000">
                     <p>“제주도 최고의 럭셔리 풀빌라” 베이힐 풀 앤 빌라의 브랜드 슬로건에 맞게 전체적으로 블랙, 화이트 색상을 선택하여 모던하고 세련된 디자인을 하였습니다 </p>
                     <p>또한, 두 컬러의 강렬한 대비로 눌러야 하는 버튼에 포인트를 주었습니다</p>
                 </div>
@@ -163,7 +164,7 @@
                             target="_blank">퍼블리싱 가이드 보러가기</a></span>
                 </div>
 
-                <ul class="publishing_txt">
+                <ul class="publishing_txt" data-aos="fade-left" data-aos-duration="1000">
                     <li>JavaScript를 스크롤 이벤트 적용</li>
                     <li>flex 및 position 사용하여 웹페이지 레이아웃 제작</li>
                     <li>CSS, Animation을 활용한 동적 효과 구현</li>
@@ -177,21 +178,16 @@
 
         </div>
     </div>
-    <!-- <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24"
-                                width="24" fill="currentColor">
-                                <path
-                                    d="M11.314 7.071l-4.95-4.95A1 1 0 0 1 7.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95zm-6 0l-4.95-4.95A1 1 0 1 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z">
-                                </path>
-                            </svg></span> -->
+
 
     <!-- problems&solution -->
     <div class="problem line">
-        <div class="problem_intro layout-wrapper ">
+        <div class="problem_intro layout-wrapper">
 
             <h1>Problems & Solution</h1>
 
             <div class="problem_txt">
-                <div class="txt_box">
+                <div class="txt_box" data-aos="fade-left" data-aos-duration="1000">
                     <h3>1. position과 z-index 사용으로 인한 hover 이벤트 발생하지 않는 문제</h3>
                     <p>스크롤 시 상위 영역의 bottom을 만나면 footer 영역이 가려지도록 position: sticky, bottom: 0을 사용하였으나 a 태그를 사용한 요소에 hover
                         이벤트가 적용되지 않는 문제점 발생</p>
@@ -199,14 +195,14 @@
                         hover 값이 적용 되도록 해결</p>
                 </div>
 
-                <div class="txt_box">
+                <div class="txt_box" data-aos="fade-left" data-aos-duration="1000">
                     <h3>2. Animation 적용 가로로 흘러가는 텍스트가 넘치는 현상 발생</h3>
                     <p>넘치는 요소 제어를 위한 overflow: hidden 을 사용해야 한다는 것을 알고 있었지만 값을 적용시켜도 요소들이 넘치는 문제가 해결되지 않음
                     </p>
                     <p>html 구조를 다시 살펴보니 형제 요소에 값을 적용했던 것이었다. 부모 요소에 적용하니 올바르게 해결</p>
                 </div>
 
-                <div class="txt_box">
+                <div class="txt_box" data-aos="fade-left" data-aos-duration="1000">
                     <h3>3. 이미지 박스 hover 시 텍스트와 이미지의 밝기가 함께 변화하는 문제 </h3>
                     <p>메인 페이지의 영역 중 3개의 이미지 박스에 hover 시 백그라운드 이미지만 밝아지는 이벤트가 발생하는데 텍스트도 함께 바뀌는 문제가 발생함
                     </p>
@@ -227,7 +223,7 @@
             <h1>Review</h1>
 
 
-            <div class="txt_box flex">
+            <div class="txt_box flex" data-aos="fade-left" data-aos-duration="1000">
                 <h3>1. 잘한 점</h3>
                 <p class="box_right">
                     1. 동일한 디자인의 서브 페이지가 많은데 경로를 헷갈리지 않게 잘 연결시켜 놨다는 점<br>
@@ -237,7 +233,7 @@
                 </p>
             </div>
 
-            <div class="txt_box flex">
+            <div class="txt_box flex" data-aos="fade-left" data-aos-duration="1000">
                 <h3>2. 부족한 점</h3>
                 <p class="box_right">
                     1. footer에서 깃허브 페이지 주소 hover가 디자인적으로 아쉬운 점<br>
@@ -246,7 +242,7 @@
                 </p>
             </div>
 
-            <div class="txt_box flex">
+            <div class="txt_box flex" data-aos="fade-left" data-aos-duration="1000">
                 <h3>3. 배운 점</h3>
                 <p class="box_right">
                     JavaScript swiper 사용을 할 수 있다고 생각했는데 팀 프로젝트를 진행하면서 부족했던
@@ -254,7 +250,7 @@
                 </p>
             </div>
 
-            <div class="txt_box flex">
+            <div class="txt_box flex" data-aos="fade-left" data-aos-duration="1000">
                 <h3>4. 총평</h3>
                 <div class="box_right">
                     <p>JavaScript와 jQuery를 배우고 처음으로 하는 팀 프로젝트였습니다. 스스로 이해도가 낮다고 생각하여 팀원들에게 도움이 될 수 있을지 의문이었습니다.<br>
