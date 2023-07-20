@@ -187,7 +187,7 @@ main .main_intro .main_intro_img img {
   margin-left: 2vw;
 }
 .overview_main_txt ul li {
-  list-style: disc;
+  list-style: decimal;
   font-size: 0.9vw;
   line-height: 1.2;
   margin-bottom: 0.9vw;
@@ -341,7 +341,7 @@ main .main_intro .main_intro_img img {
   padding-left: 3vw;
 }
 .problem .txt_box ul li {
-  list-style: disc;
+  list-style: decimal;
   line-height: 2.6;
 }
 
@@ -472,7 +472,6 @@ main .main_intro .main_intro_img img {
   margin-bottom: 3vw;
 }
 .review .review_txt .review_box ul li {
-  list-style: disc;
   line-height: 2;
 }
 .review .review_txt .review_box:last-child ul li {
