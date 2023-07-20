@@ -4,11 +4,13 @@
 
   $(window).on('scroll', () => {
     // console.log(scrollY);
-    if (scrollY > 200) {
+    if (scrollY > 150) {
       $('header').css({
         width:'80%',
         borderRadius:'25px',
         margin:'0 auto',
+        transform:'translatey(2vw)',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
         opacity: 1,
       });
     } else {
@@ -16,7 +18,8 @@
         width:'100%',   
         opacity: 1,
         borderRadius:'0',
-        // marginTop:'1vw'
+        transform:'translate(0)',
+        // marginTop:'1.5vw'
     
       });
     }
@@ -26,8 +29,8 @@
   $(document).ready(function () {
     $('.ham_btn').on('click', (e) => {
       e.preventDefault();
-      $('.menu_wrapper_list').slideToggle();
-      $('.menu_wrapper_list').toggleClass('hide');
+      $('.ham_btn_list').slideToggle();
+      $('.ham_btn_list').toggleClass('hide');
     });
   });
 

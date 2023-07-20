@@ -117,19 +117,19 @@
 
             <div class="publishing_txt">
                 <div class=" media" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>미디어 쿼리를 이용한 유연한 콘텐츠 배치</h3>
+                    <h3>1. 미디어 쿼리를 이용한 유연한 콘텐츠 배치</h3>
                     <p>해상도에 따른 사이즈 변화를 위해 px이 아닌<span class="half-highlight"> 가변 가능한 vw, vh 사용</span><br>
                         가독성을 높이기 위한 줄바꿈 word-break 사용<br>
                         @media="(width >=1165px)” / @media="(width >=768px)” / @media="(width >=500px)” </p>
                 </div>
 
                 <div class="webpage" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>웹페이지 레이아웃 제작</h3>
+                    <h3>2. 웹페이지 레이아웃 제작</h3>
                     <p><span class="half-highlight">flex 사용</span> 웹페이지 레이아웃 제작</p>
                 </div>
 
                 <div class="move" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>동적 효과 구현 (CSS, JavaScript)</h3>
+                    <h3>3. 동적 효과 구현 (CSS, JavaScript)</h3>
                     <p>이미지 박스 hover 시 해당 이미지 내용 출력<br>
                         스크롤 위치에 따른 <span class="half-highlight"> nav 바 생성 변화</span> 이벤트</p>
 
@@ -143,28 +143,33 @@
     <div class="problem">
         <div class="problem_intro layout-wrapper flex">
 
-            <h1>Problems <span>&</span> Solution</h1>
+            <h1>Problems & Solution</h1>
 
             <div class="problem_txt">
                 <div class="video" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>기존 사이트의 video를 사용하려 했으나, 기본적으로 고정되어 있는 사이즈로 인하여 비율 제어 문제 발생.</h3>
+                    <h3>1. 기존 사이트의 video를 사용하려 했으나, 기본적으로 고정되어 있는 사이즈로 인하여 비율 제어 문제 발생.</h3>
                     <p>유사한 video로 대체하여 <span class="half-highlight">iframe tag</span>를 이용해 <span
                             class="half-highlight">비율 제어 문제</span>를 해결함. </p>
                 </div>
 
                 <div class="green" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>녹색지구 section 각각의 박스 hover 시 아래에서 나타나는 배경색이 사진의 크기에 맞지 않는 문제가 발생함.</h3>
+                    <h3>2. 녹색지구 section 각각의 박스 hover 시 아래에서 나타나는 배경색이 사진의 크기에 맞지 않는 문제가 발생함.</h3>
                     <p>html에서의 img tag에 사용한 <span class="half-highlight">이미지 사이즈의 비율이 1 : 1이 아니어서</span> 문제가 발생하였으므로 사이즈
                         수정 후 해결함</p>
                 </div>
 
-                <div class="logo" data-aos="fade-left" data-aos-duration="1000">
+                <!-- <div class="logo" data-aos="fade-left" data-aos-duration="1000">
                     <h3>탄소중립 section의 브랜드 로고 background: url(image 경로) 사용하였으나 사이즈 조절의 어려움 </h3>
                     <p>브랜드 로고별로 동일한 여백과 사이즈 조절을 단순히 margin 혹은 padding으로만 조절하려 해서 사이즈 조절이 힘들었음, 그러나 <span
-                            class="half-highlight">background-size
-                            : %</span>로
-                        조절하여
-                        해결함.</p>
+                            class="half-highlight">background-size : %</span>로 조절하여 해결함.</p>
+                </div> -->
+
+                <div class="green" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>3. 스크롤 위치에 따른 nav 바 변화 이벤트와 top에서 떨어져야 하나 구현되지 않는 문제 발생</h3>
+                    <p>해당 영역에 <span class="half-highlight">position : sticky, top:0</span>을 적용했고 JavaScript marginTop으로
+                        이벤트 발생할 것이라 생각하였지만 해결 불가했음.<br>그러나
+                        <span class="half-highlight">JavaScript transform:'translate(0)'</span>을 적용시켰더니 문제 해결함.
+                    </p>
                 </div>
             </div>
 

@@ -28,6 +28,7 @@
   color: #fff;
 }
 
+
 /***** contents *****/
 
 body {
@@ -46,18 +47,21 @@ body > div {
   z-index: 1;
 }
 
+
 /***** header-menu *****/
 header{
   width: 100%;
   height: 9vh;
 
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
   box-shadow: 20px 20px 40px rgba(31, 35, 83, 0.3);
 
   position: sticky;
   top: 0;
   z-index: 50;
+
+  transition: 0.4s;
 }
 header .header_nav{
   line-height: 9vh;
@@ -114,38 +118,28 @@ header .header_nav .ham_btn{
   align-items: center;
 }
 
+.hide{
+  display: none;
+}
+/* 햄버거 btn 클릭시 나오는 메뉴
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hide{
+width: 35%;
+background-color: rgba(255, 255, 255, 0.8);
+margin-top: 1vw;
+}
+.hide .side_menu{
+  margin-top: 4vw;
+  text-align: center;
+  margin: 0 auto;
+} 
+.hide .side_menu li:hover a{
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  transform: translateY(-5px);
+}
+ */
 
 
 /***** main *****/
@@ -177,6 +171,7 @@ header .header_nav .ham_btn{
   font-size: var(--font-size-14);
   margin: 35px 0;
 }
+
 
 /***** 탄소 section1 *****/
 .hyrex {
@@ -231,6 +226,7 @@ header .header_nav .ham_btn{
   font-size: var(--font-size-20);
 }
 
+
 /***** 녹색지구 section2 *****/
 .greenate {
   background-color: #fff;
@@ -269,10 +265,7 @@ header .header_nav .ham_btn{
 .greenate .txt-box .plus {
   display: none;
 }
-/* .greenate .img-txt li:nth-child(1){
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./images/greenate_future_01.jpg) no-repeat 50%;
-  opacity: 0.5;
-} */
+
 
 /***** 탄소중립 section3 *****/
 .posco-asia {
@@ -304,6 +297,7 @@ header .header_nav .ham_btn{
 .posco-asia .posco-asia-sub p:last-child {
   margin: 15px 0 20px 0;
 }
+
 
 /***** 탄소중립 section3 로고 *****/
 .posco-asia-img-box .left {
@@ -343,6 +337,7 @@ header .header_nav .ham_btn{
   text-indent: -9999px;
   height: 30%;
 }
+
 
 /***** 철강사 section4 *****/
 .global {
@@ -395,6 +390,7 @@ header .header_nav .ham_btn{
   margin-bottom: 40px;
 }
 
+
 /***** footer *****/
 .footer {
   width: 100%;
@@ -405,7 +401,7 @@ header .header_nav .ham_btn{
 
   position: sticky;
   bottom: 0;
-  z-index: -5;
+  z-index: 0;
 }
 .footer .footer-nav li {
   margin: 5px;
@@ -418,7 +414,8 @@ header .header_nav .ham_btn{
 .footer .footer-info li {
   line-height: 25px;
 }
-.footer .footer-btn {
+.footer .footer-btn a{
+  display: block;
   background-color: #fff;
   color: var(--main-color);
   border: 1px solid #fff;
@@ -428,5 +425,4 @@ header .header_nav .ham_btn{
   padding: 10px 15px;
 
   position: relative;
-  z-index: 600;
 }

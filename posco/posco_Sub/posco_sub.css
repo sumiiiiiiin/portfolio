@@ -8,7 +8,7 @@
 
 body {
   background-color: #f2ede4;
-  color: #575f50;
+  color: #333;
   font-family: var(--ko-font-pr);
 }
 
@@ -21,14 +21,13 @@ body {
 }
 .flex {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
 }
 .half-highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffd0ae 50%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #77c9ff8a
+  50%);
 }
 .line {
-  border-bottom: 1px solid #1f2353;
+  border-bottom: 1px solid #929292;
 }
 
 /***** 홈버튼 *****/
@@ -95,7 +94,7 @@ header .home_btn span:hover:after {
 .mainpage {
   width: 100%;
   height: 80vh;
-  color: #575f50;
+  color: #343434;
 }
 .mainpage .main_intro {
   margin-top: 10vw;
@@ -104,7 +103,7 @@ header .home_btn span:hover:after {
 }
 .mainpage .main_intro .main_intro_txt h1 {
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: 700;
 }
 .mainpage .main_intro .main_intro_txt h2 {
   font-size: 1.5vw;
@@ -113,7 +112,7 @@ header .home_btn span:hover:after {
 .mainpage .main_intro .main_intro_txt h3 {
   margin-top: 7vw;
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: 700;
 }
 .mainpage .main_intro .main_intro_txt p {
   font-size: 1vw;
@@ -165,7 +164,7 @@ header .home_btn span:hover:after {
 /***** 프로젝트 목표 *****/
 .project {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 .project .project_intro {
   margin-top: 5vw;
@@ -175,11 +174,11 @@ header .home_btn span:hover:after {
 .project h1 {
   color: #1f2353;
   font-size: 2.25vw;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .project .project_txt p {
-  font-size: 1.09vw;
+  font-size: 1.05vw;
 }
 .project .project_txt p:last-child {
   margin-top: 2vw;
@@ -196,8 +195,7 @@ header .home_btn span:hover:after {
 .style .style_intro h1 {
   color: #1f2353;
   font-size: 2.25vw;
-  font-weight: 600;
-  font-family: var(--main-font);
+  font-weight: 700;
   margin-bottom: 50px;
 }
 .style .style_txt {
@@ -236,11 +234,10 @@ header .home_btn span:hover:after {
 .publishing .publishing_intro h1 {
   color: #1f2353;
   font-size: 2.25vw;
-  font-weight: 600;
-  font-family: var(--main-font);
+  font-weight: 700;
+
 }
 .publishing .publishing_txt {
-  /* margin-right: 7vw; */
   width: 41%;
 }
 .publishing .publishing_txt h3 {
@@ -249,8 +246,9 @@ header .home_btn span:hover:after {
   margin-bottom: 1vw;
 }
 .publishing .publishing_txt p {
-  font-size: 1.09vw;
+  font-size: 1vw;
   line-height: 1.5;
+  margin-left: 1vw;
 }
 .publishing .publishing_txt .webpage {
   margin: 5vw 0;
@@ -259,7 +257,7 @@ header .home_btn span:hover:after {
 /***** 문제점&해결 *****/
 .problem {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 
   position: relative;
 }
@@ -271,12 +269,8 @@ header .home_btn span:hover:after {
 .problem .problem_intro h1 {
   color: #1f2353;
   font-size: 2.25vw;
-  font-weight: 600;
-  font-family: var(--main-font);
-}
-.problem .problem_intro h1 span {
-  font-family: var(--ko-font);
-  font-weight: 100;
+  font-weight: 700;
+  
 }
 .problem .problem_txt {
   width: 41%;
@@ -291,7 +285,8 @@ header .home_btn span:hover:after {
   margin-bottom: 1vw;
 }
 .problem .problem_txt p {
-  font-size: 1.09vw;
+  font-size: 1vw;
+  margin-left: 1vw;
 }
 
 /***** footer btn *****/
@@ -304,7 +299,7 @@ header .home_btn span:hover:after {
 
   position: absolute;
   right: 34%;
-  bottom: 20%;
+  bottom: 15%;
 }
 .problem .footer_btn span {
   text-align: center;
