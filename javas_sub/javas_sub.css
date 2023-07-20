@@ -284,14 +284,10 @@ width: 35%;
 border-bottom: 1px solid #000;
 }
 .goto:hover{
-    /* color: #0d2dc9; */
 font-weight: 800;
 transition: 0.4s;
 transform: translate(4%);
 }
-
-
-
 
 /* 퍼블리싱가이드 btn */
 .guide_btn {
