@@ -310,14 +310,14 @@ button:hover:after {
 }
 .side_intro .side_left h1{
     background: url(./images/page_txt1.png) no-repeat 50% / contain;
-    width: 30vw;
-    height: 17.5vw;
+    width: 37vw;
+    height: 18vw;
     text-indent: -9999px;
 }
  .side_intro .side_left .left_img{
     width:50vw;
     position: absolute;
-    transform: translate(50%, -30%)
+    transform: translate(48%, -31%)
 }
 /* 왼쪽 서브 텍스트 */
 .side_main .side_left .left_txt {
@@ -327,18 +327,18 @@ button:hover:after {
     left: 0;
  
     align-items: flex-end;
-    padding-left: 2.5vw;
+    padding-left: 3vw;
 }
 .side_main .side_left .left_txt h2{
     background: url(./images/h2_left.png) no-repeat 100% / contain;
-    width: 4vw;
+    width: 5vw;
     height: 19vw;
 
     text-indent: -9999px;
 }
 .side_main .side_left .left_txt p{
     width: 39%;
-    margin:0 0 1.5vw 0.5vw;
+    margin:0 0 0.5vw 1.5vw;
     font-size: 1.1vw;
 }
 /* 왼쪽 영역 hover  */
@@ -364,8 +364,8 @@ button:hover:after {
     bottom: 0;
     right: 0;
     background: url(./images/page_txt2.png) no-repeat -0% / contain;
-    width: 30vw;
-    height: 17.5vw;
+    width: 41vw;
+    height: 18vw;
     text-indent: -9999px;
 }
 .side_intro .side_right .right_img{
@@ -378,7 +378,7 @@ button:hover:after {
  /* 오른쪽 서브 텍스트  */
 .side_main .side_right .right_txt {
     width: 50vw;
-    padding-right: 2.5vw;
+    /* margin-right: 3vw; */
 }
 .side_main .side_right .right_txt h2{
     position: absolute;
@@ -388,8 +388,9 @@ button:hover:after {
 
     background: url(./images/h2_right.png) no-repeat 100% / contain;
 
-    width: 40vw;
+    width: 5vw;
     height: 19vw;
+    margin: 0 2vw;
 
     text-indent: -9999px;
 }
@@ -403,7 +404,7 @@ button:hover:after {
     position: absolute;
     top: 0;
     right: 0;
-    transform:translate(-35%, 43%); 
+    transform:translate(-35%, 40%); 
 }
 /* 오른쪽 영역 hover */
 .side_main .side_right:hover{
