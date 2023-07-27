@@ -4,13 +4,13 @@
 
 /***** header *****/
 header {
-  /* padding-top: 0; */
   padding-top: 1vw;
 }
 /* 햄버거 메뉴 */
 .menu {
   width: 100%;
   background-color: #fff;
+  padding: 1vw 0;
 }
 .menu li {
   padding: 1vw 0;
@@ -25,7 +25,7 @@ header {
 }
 .menu li a {
   color: #000;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
 }
 
 /***** main *****/

@@ -25,12 +25,7 @@ $(window).on('scroll', () => {
 });
 
 // 햄버거메뉴 열고 닫기
-// $(function () {
-//   $('.checkbox').on('click', () => {
-//     $('.checkmark span').toggleClass('active');
-//     $('.menu').slideToggle(); // == display: block
-//   });
-// });
+
 $(function () {
   // 이 코드는 문서가 준비된 상태에서 실행됩니다. 즉, DOM이 완전히 로드된 상태에서 실행됩니다.
 

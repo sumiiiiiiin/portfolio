@@ -185,7 +185,10 @@ header .header_nav .header_utill img:hover {
   transform: translateX(-50px);
   opacity: 0;
 }
+
+/* 햄버거 메뉴 */
 .menu {
+  padding: 1vw 0;
   display: none;
   width: 100%;
   background-color: #fff;
@@ -203,7 +206,7 @@ header .header_nav .header_utill img:hover {
 }
 .menu li a {
   color: #000;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 /***** main *****/
