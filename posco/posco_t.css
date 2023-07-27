@@ -2,12 +2,36 @@
 
 /* tablet */
 
+/***** header *****/
+header {
+  /* padding-top: 0; */
+  padding-top: 1vw;
+}
+/* 햄버거 메뉴 */
+.menu {
+  width: 100%;
+  background-color: #fff;
+}
+.menu li {
+  padding: 1vw 0;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+.menu li:hover {
+  background-color: var(--main-color);
+}
+.menu li:hover a {
+  color: #fff;
+}
+.menu li a {
+  color: #000;
+  font-size: 1.8vw;
+}
 
 /***** main *****/
 .main .main1-txt h1 {
   margin-bottom: 0;
 }
-
 
 /***** 탄소 section1 *****/
 .hyrex .hyrex-main {
@@ -23,7 +47,6 @@
   width: 30%;
 }
 
-
 /*****녹색지구 section2*****/
 .greenate .img-txt {
   display: flex;
@@ -37,7 +60,6 @@
 .greenate .img-txt .desc {
   margin-top: 10px;
 }
-
 
 /*****탄소중립 section3*****/
 .posco-asia .txt-logo {
@@ -53,7 +75,6 @@
 .posco-asia .txt-logo .posco-asia-img-box {
   width: 50%;
 }
-
 
 /*****철강사 section4*****/
 .global {

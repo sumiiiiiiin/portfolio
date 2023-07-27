@@ -2,29 +2,38 @@
 
 /******* pc *******/
 
-
 /***** header *****/
+header {
+  padding-top: 0;
+}
 
-header .header_nav .menu_nav{
+header .header_nav .menu_nav {
   display: flex;
- }
- header .header_nav .menu_nav li:hover{
+  /* align-items: center; */
+}
+header .header_nav .menu_nav li:hover {
   font-weight: bold;
   transition: 0.5s;
   transform: translateY(-5px);
- }
- header .header_nav .header_utill{
+}
+header .header_nav .header_utill {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
- }
- header .header_nav .header_utill img {
+}
+header .header_nav .header_utill img {
   display: flex;
 }
- header .header_nav .ham_btn{
+/* header .header_nav .ham_btn{
+  display: none;
+} */
+/* 햄버거 버튼 */
+.hamburger_btn {
   display: none;
 }
-
+.menu {
+  display: none;
+}
 
 /***** main *****/
 .main1 {
@@ -57,7 +66,6 @@ header .header_nav .menu_nav{
   font-size: var(--font-size-18);
 }
 
-
 /***** 탄소 section1 *****/
 .hyrex .hyrex-txt {
   margin: 0 auto;
@@ -67,7 +75,6 @@ header .header_nav .menu_nav{
   width: 30%;
   height: 380px;
 }
-
 
 /*****녹색지구 section2*****/
 .greenate .txt-box {
@@ -131,7 +138,6 @@ header .header_nav .menu_nav{
   transform: translateY(-100%);
 }
 
-
 /*****탄소중립 section3*****/
 .posco-asia .txt-logo {
   display: flex;
@@ -167,7 +173,6 @@ header .header_nav .menu_nav{
   transition: 0.8s;
   box-shadow: 3px 4px 10px#77c9ff;
 }
-
 
 /*****철강사 section4*****/
 .global {
@@ -205,7 +210,6 @@ header .header_nav .menu_nav{
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
 
 /*****footer*****/
 
