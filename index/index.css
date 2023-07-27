@@ -16,6 +16,7 @@ header .portfolio_svg svg {
 
   margin: 0 auto;
 }
+/* svg 효과 */
 
 /*** 깃허브 버튼 ***/
 .dropdown {
@@ -30,10 +31,10 @@ header .portfolio_svg svg {
   position: absolute;
   left: -100vw;
 }
-.dropdown label{
+.dropdown label {
   font-size: 1.1vw;
 }
-.dropdown ul li a{
+.dropdown ul li a {
   font-size: 0.8vw;
 }
 .dropdown > label,

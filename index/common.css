@@ -52,7 +52,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #eae1d3;
+  /* background-color: #eae1d3; */
+  background-color: #f2ede4;
   color: var(--color);
   font-family: var(--main-font);
 }
