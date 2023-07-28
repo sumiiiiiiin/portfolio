@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 공통 css */
+@import url(../../index/common.css);
+
+body {
+  background-color: #f2ede4;
+  color: #333;
+  font-family: var(--ko-font-pr);
+}
+
+/***** 공통 css *****/
+.layout-wrapper {
+  width: 80%;
+  margin: 0px auto;
+
+  padding: 20px;
+}
+.flex {
+  display: flex;
+}
+.half-highlight {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    #cbff778a 50%
+  );
+}
+.line {
+  border-bottom: 1px solid #929292;
+}
+
+/***** 홈버튼 *****/
+header {
+  width: 100%;
+}
+
+header .home_btn {
+  width: 5.35vw;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+header .home_btn span {
+  text-align: center;
+  background-color: #4d750d;
+  color: #fff;
+  height: 2.35vw;
+
+  line-height: 2.35vw;
+  display: block;
+}
+header .home_btn span a {
+  display: block;
+}
+
+header .home_btn span:hover {
+  background: transparent;
+  color: #4d750d;
+  box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+    7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+}
+
+header .home_btn span:before,
+header .home_btn span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+
+  background-color: #4d750d;
+  transition: 400ms ease all;
+}
+
+header .home_btn span:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+header .home_btn span:hover:before,
+header .home_btn span:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+/***** main *****/
+main {
+  width: 100%;
+  height: 80vh;
+  color: #343434;
+}
+main .main_intro {
+  margin-top: 10vw;
+  justify-content: space-between;
+  align-items: center;
+}
+main .main_intro h1 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+main .main_intro p {
+  font-size: 1.2vw;
+  margin-top: 1vw;
+}
+main .img_txt {
+  margin-top: 1vw;
+  justify-content: space-between;
+  align-items: center;
+}
+main .img_txt .sub_txt h2 {
+  font-family: 'Hahmlet-Regular';
+  font-size: 3.2vw;
+  font-weight: 800;
+  line-height: 0.7;
+}
+main .img_txt .sub_txt .small {
+  font-size: 1.7vw;
+}
+main .img_txt img {
+  width: 40.15vw;
+  height: 22.5999vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/***** overview  *****/
+.overeview {
+  width: 100%;
+  height: 40vh;
+}
+.overeview .overeview_intro {
+  margin-top: 5vw;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.overeview .overeview_intro h1 {
+  font-weight: 800;
+  font-size: 2.25vw;
+  color: #4d750d;
+}
+.overeview .overeview_txt p {
+  /* width: 98%; */
+  font-size: 1vw;
+
+  margin-bottom: 2vw;
+  line-height: 2;
+}
+
+/***** style guide *****/
+.style {
+  width: 100%;
+  height: 50vh;
+}
+.style .style_intro {
+  margin-top: 5vw;
+}
+.style .style_intro h1 {
+  color: #4d750d;
+  font-size: 2.25vw;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.style .style_txt {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.style .style_txt ul .bold {
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin-bottom: 50px;
+}
+.style .style_txt .txt {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.style .style_txt .color_tag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1vw;
+  margin-top: 1vw;
+}
+
+/***** publishing *****/
+
+/***** 문제해결 *****/
+/***** footer *****/
