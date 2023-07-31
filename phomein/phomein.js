@@ -17,7 +17,4 @@ function handleScroll() {
 // // 스크롤 이벤트를 감지하여 핸들러 함수 호출
 window.addEventListener('scroll', handleScroll);
 
-
-
-
 // JavaScript 코드

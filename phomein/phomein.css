@@ -3,6 +3,10 @@
 /* fonts */
 @import url(../common/fonts.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 /***** 공통 css *****/
 body {
   font-family: 'Noto Sans KR', sans-serif;
@@ -146,7 +150,7 @@ header .header_wrapper .menu_nav .new a {
   transition: width 0.3s;
 }
 .main .btn .link2:hover::before {
-  width: 140%;
+  width: 135%;
 }
 /* 소고기쌀국수 사진 */
 .main .main_img {
@@ -199,20 +203,20 @@ header .header_wrapper .menu_nav .new a {
 .phomain .intro .box1 h1 {
   background: url(./images/h1_1.png) no-repeat 50% / contain;
   width: 4vw;
-  height: 12.5vw;
+  height: 13vw;
   text-indent: -9999px;
 }
 
 .phomain .intro .box2 h1 {
   background: url(./images/h1_2.png) no-repeat 50% / contain;
   width: 4vw;
-  height: 12.5vw;
+  height: 13vw;
   text-indent: -9999px;
 }
 .phomain .intro .box3 h1 {
   background: url(./images/h1_3.png) no-repeat 50% / contain;
   width: 4vw;
-  height: 12.5vw;
+  height: 13vw;
   text-indent: -9999px;
 }
 
@@ -230,48 +234,49 @@ header .header_wrapper .menu_nav .new a {
   margin-right: 1vw;
 }
 .phomain .intro .box .title {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: 600;
 }
 .phomain .intro .box .sub {
-  margin: 1.3vw 0;
+  margin: 1.2vw 0;
+  font-size: 1vw;
 }
 
 /* 아래 btn */
-button {
+.phomain button {
+  font-family: 'Pretendard Variable';
   border-radius: 1.2vw;
   background-color: #4d750d;
   border: none;
   color: #fff;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   text-align: center;
-  padding: 0.8vw;
+  padding: 0.6vw;
   width: 9vw;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 0.7vw 0;
-}
-button {
+
+  /* margin: 0.7vw 0; */
+
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
+
 button:after {
   content: '»';
   position: absolute;
   opacity: 0;
-  top: 0.88vw;
+  top: 0.55vw;
   right: -1vw;
   transition: 0.5s;
 }
 button:hover {
-  padding-right: 1.5vw;
+  padding-right: 1vw;
   padding-left: 0.8vw;
 }
 button:hover:after {
   opacity: 1;
-  right: 0.5vw;
+  right: 0.8vw;
 }
 
 /* 텍스트박스 위치조정 */
@@ -288,7 +293,7 @@ button:hover:after {
 /***** section2 좌우 스크립트 부분 *****/
 .side_intro {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
   position: relative;
 }
@@ -313,13 +318,6 @@ button:hover:after {
   height: 18vw;
   text-indent: -9999px;
 }
-/* 왼쪽 이미지 */
-
-/* .side_intro .side_left .left_img{
-    width:50vw;
-    position: absolute;
-    transform: translate(48%, -31%)
-} */
 /* 왼쪽 서브 텍스트 */
 .side_main .side_left .left_txt {
   width: 48vw;
@@ -342,12 +340,8 @@ button:hover:after {
   margin: 0 0 0.5vw 1.5vw;
   font-size: 1.1vw;
 }
-/* 왼쪽 영역 hover  */
-.side_intro .side_left:hover {
-  width: 150%;
-}
 
-/* 오른쪽 영역*/
+/* 오른쪽 영역 */
 .side_intro .side_right {
   background-color: #f6f5ef;
 
@@ -357,7 +351,7 @@ button:hover:after {
 
   position: relative;
 
-  transition: width 0.3s;
+  transition: 0.3s;
   overflow: hidden;
 }
 .side_intro .side_right h1 {
@@ -369,15 +363,50 @@ button:hover:after {
   height: 18vw;
   text-indent: -9999px;
 }
-/* 오른쪽 이미지 */
 
-/* .side_intro .side_right .right_img{
-    width: 48.5vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-53%, 6.5%)
-} */
+/* 이미지 움직임 animation*/
+.left_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(30%, 30%);
+  animation: move1 2.5s forwards;
+
+  width: auto;
+}
+@keyframes move1 {
+  0% {
+    transform: translate(30%, 30%) scale(1.4);
+  }
+  100% {
+    transform: translate(130%, 44%) scale(1);
+  }
+}
+
+.right_img {
+  /* 초기 위치를 컨테이너 중앙에 겹치도록 설정 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-30%, 30%);
+  animation: move2 2.5s forwards;
+
+  width: auto;
+}
+@keyframes move2 {
+  0% {
+    transform: translate(-30%, 30%) scale(1.4);
+  }
+  100% {
+    transform: translate(-120%, 38%) scale(1);
+  }
+}
+.side_left:hover,
+.side_right:hover {
+  transition: 1.6s;
+  width: 140%;
+}
+
 /* 오른쪽 서브 텍스트  */
 .side_main .side_right .right_txt {
   width: 50vw;
@@ -409,10 +438,6 @@ button:hover:after {
   right: 0;
   transform: translate(-35%, 40%);
 }
-/* 오른쪽 영역 hover */
-.side_main .side_right:hover {
-  width: 150%;
-}
 
 /* 자세히보기 버튼 */
 .side_intro .btn {
@@ -429,7 +454,7 @@ button:hover:after {
   color: #fff;
 
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 45.5%;
   cursor: pointer;
   padding: 0 1vw 0 0;
@@ -445,56 +470,6 @@ button:hover:after {
   position: absolute;
   right: 5%;
   top: 13%;
-}
-
-/* 이미지 움직임 animation*/
-
-.left_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(6%, 5%);
-  animation: move1 2.5s forwards;
-}
-@keyframes move1 {
-  0% {
-    transform: translate(6%, 5%) scale(1.2);
-  }
-  100% {
-    transform: translate(54%, 7%) scale(1);
-  }
-}
-
-.right_img {
-  /* 초기 위치를 컨테이너 중앙에 겹치도록 설정 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(6%, 5%);
-  animation: move2 2.5s forwards;
-}
-
-/* 이미지를 버튼 위치로 이동하는 @keyframes 애니메이션 정의 */
-@keyframes move2 {
-  0% {
-    transform: translate(6%, 5%);
-  }
-  100% {
-    transform: translate(-53%, 6.5%) scale(1);
-  }
-}
-.side_right {
-  /* 초기 width 값을 설정하고 hover 시에만 늘어나도록 함 */
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* transform: translate(-53%, 6.5%) */
-}
-
-.side_left:hover,
-.side_right:hover {
-  width: 150%;
 }
 
 /***** section3 사진 여러개 나눠진 부분 *****/
@@ -720,7 +695,7 @@ button:hover:after {
 .news .notice-list .link2:hover::before {
   width: 140%;
 }
-/* 박스로 영역 맞추기 */
+/* 언론기사 하단 왼쪽 작은 네모 영역 맞추기 */
 .news .color_box {
   background-color: #dad6c5;
   width: 13vw;
@@ -737,6 +712,8 @@ footer {
   width: 100%;
   height: 40vh;
   background-color: #dad6c5;
+
+  position: relative;
 }
 footer .info {
   margin: 0 auto;
@@ -799,5 +776,41 @@ footer .info .link2::before {
   transition: width 0.3s;
 }
 footer .info .link2:hover::before {
-  width: 140%;
+  width: 135%;
+}
+
+/* top btn */
+footer .top {
+  transition: 0.5s;
+  text-align: center;
+  position: absolute;
+  right: 13%;
+  top: 10%;
+}
+
+footer .top a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: o auto;
+}
+footer .top p {
+  margin-top: 0;
+  font-size: 0.7vw;
+  text-transform: uppercase;
+}
+
+/* 우측 상담하기 btn */
+.talk {
+  display: grid;
+
+  position: fixed;
+  right: 0.2%;
+  bottom: 3%;
+
+  cursor: pointer;
+}
+.talk img {
+  margin-bottom: 0.3vw;
+  width: 3vw;
+  height: 3vw;
 }
