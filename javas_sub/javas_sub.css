@@ -94,8 +94,6 @@ main {
 }
 main .main_intro {
   margin-top: 10vw;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 main .main_intro h1 {
   font-size: 3vw;
@@ -121,6 +119,7 @@ main .img_txt .intro_txt .small {
 main .img_txt img {
   width: 40.15vw;
   height: 22.5999vw;
+  box-shadow: 7px 5px 6px 2px rgba(166, 166, 166, 0.85);
 }
 
 /***** overeview *****/
@@ -226,7 +225,6 @@ main .img_txt img {
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .design .style .bold {
   font-weight: bold;
   font-size: 1.5vw;
@@ -444,14 +442,12 @@ main .img_txt img {
 .review .footer_btn span a {
   display: block;
 }
-
 .review .footer_btn span:hover {
   background: transparent;
   color: #000;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-
 .review .footer_btn span:before,
 .review .footer_btn span:after {
   content: '';
