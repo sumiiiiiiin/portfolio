@@ -77,24 +77,27 @@ header .header_wrapper .menu_nav .new a {
 /* 왼쪽 위 gif */
 .main .bg_video .video_left .left1 {
   height: 50%;
-  background: url(./images/main_video1.gif) no-repeat 50% / cover;
-  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main_video1.gif) no-repeat 50% / cover;
+  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }
 /* 왼쪽 아래 gif */
 .main .bg_video .video_left .left2 {
   height: 50%;
-  background: url(./images/main_video2.gif) no-repeat 50% / cover;
-  /* background-blend-mode: multiply; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main_video2.gif) no-repeat 50% / cover;
+  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }
 /* 오른쪽 gif */
 .main .bg_video .video_right {
   width: 50%;
-  background: url(./images/main_video3.gif) no-repeat 50% / cover;
-  /* background-blend-mode: multiply; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main_video3.gif) no-repeat 50% / cover;
+  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }

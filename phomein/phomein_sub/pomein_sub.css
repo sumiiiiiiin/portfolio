@@ -23,7 +23,7 @@ body {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 50%,
-    #cbff778a 50%
+    #9bd1558a 50%
   );
 }
 .line {
@@ -191,6 +191,119 @@ main .img_txt img {
 }
 
 /***** publishing *****/
+.publishing {
+  width: 100%;
+  height: 50vh;
+}
+.publishing .publishing_intro {
+  margin-top: 5vw;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.publishing .publishing_intro h1 {
+  color: #4d750d;
+  font-size: 2.25vw;
+  font-weight: 700;
+}
+.publishing .publishing_txt {
+  width: 41%;
+}
+.publishing .publishing_txt h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+.publishing .publishing_txt p {
+  font-size: 1vw;
+  line-height: 1.5;
+  margin-left: 1vw;
+}
+.publishing .publishing_txt .webpage {
+  margin: 5vw 0;
+}
 
 /***** 문제해결 *****/
-/***** footer *****/
+.problem {
+  width: 100%;
+  height: 60vh;
+
+  position: relative;
+}
+.problem .problem_intro {
+  margin-top: 5vw;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.problem .problem_intro h1 {
+  color: #4d750d;
+  font-size: 2.25vw;
+  font-weight: 700;
+}
+.problem .problem_txt {
+  width: 41%;
+  padding-top: 0.2vw;
+}
+.problem .problem_txt .green {
+  margin: 5vw 0;
+}
+.problem .problem_txt h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+.problem .problem_txt p {
+  font-size: 1vw;
+  margin-left: 1vw;
+  line-height: 1.6;
+}
+
+/***** 사이트보러가기 btn *****/
+.problem .footer_btn {
+  width: 10vw;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  position: absolute;
+  right: 33%;
+  bottom: 8%;
+}
+.problem .footer_btn span {
+  text-align: center;
+  background-color: #4d750d;
+  color: #fff;
+  height: 2.35vw;
+
+  line-height: 2.35vw;
+  display: block;
+}
+.problem .footer_btn span a {
+  display: block;
+}
+.problem .footer_btn span:hover {
+  background: transparent;
+  color: #4d750d;
+  box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+    7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+}
+.problem .footer_btn span:before,
+.problem .footer_btn span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background-color: #4d750d;
+  transition: 400ms ease all;
+}
+.problem .footer_btn span:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.problem .footer_btn span:hover:before,
+.problem .footer_btn span:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
