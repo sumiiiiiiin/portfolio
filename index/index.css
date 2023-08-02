@@ -19,6 +19,7 @@ header .portfolio_svg svg {
 /* svg 효과 */
 
 /*** 깃허브 버튼 ***/
+/*
 .dropdown {
   position: fixed;
   display: inline-block;
@@ -58,13 +59,13 @@ header .portfolio_svg svg {
 .dropdown > a[role='button']:focus {
   border-color: #7f9e67;
 }
-/* .dropdown > label:after,
+.dropdown > label:after,
 .dropdown > a[role="button"]:after {
   content: "\e313";
   font-family: FontAwesome;
   display: inline-block;
   margin-left: 6px;
-} */
+}
 
 .dropdown > ul {
   position: absolute;
@@ -100,10 +101,10 @@ header .portfolio_svg svg {
 .dropdown > ul:target {
   left: 0;
 }
-/* .dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > [type="checkbox"]:checked + label:after,
 .dropdown > ul:target ~ a:after {
   content: "\f0d8";
-} */
+}
 .dropdown a.close {
   display: none;
 }
@@ -116,14 +117,14 @@ header .portfolio_svg svg {
   width: 100%;
   text-indent: -100vw;
   z-index: 1000;
-}
+} */
 
 /* 기존 버튼 */
-/* header .git_btn {
+header .git_btn {
   width: 5.35vw;
   font-family: var(--en-font);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 
   position: fixed;
   right: 1%;
@@ -173,7 +174,7 @@ header .git_btn span:hover:before,
 header .git_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
-} */
+}
 
 /***** main *****/
 .main-txt {
