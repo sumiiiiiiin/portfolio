@@ -13,9 +13,9 @@ header .portfolio_svg {
 }
 header .portfolio_svg svg {
   text-align: center;
-
   margin: 0 auto;
 }
+
 /* svg 효과 */
 
 /*** 깃허브 버튼 ***/
@@ -58,7 +58,6 @@ header .portfolio_svg svg {
 .dropdown > a[role='button']:focus {
   border-color: #7f9e67;
 }
-
 /* .dropdown > label:after,
 .dropdown > a[role="button"]:after {
   content: "\e313";
@@ -177,7 +176,6 @@ header .git_btn span:hover:after {
 } */
 
 /***** main *****/
-
 .main-txt {
   width: 100%;
   height: 46vh;
@@ -195,7 +193,6 @@ header .git_btn span:hover:after {
 .main-txt .name span {
   font-weight: 700;
 }
-
 .main-txt .main-mail {
   font-family: var(--en-font);
   font-size: var(--font-size-25);
@@ -240,7 +237,6 @@ header .git_btn span:hover:after {
 }
 
 /*** div1, selected category ***/
-
 .selected-line {
   border-bottom: 1px solid var(--color);
 }
@@ -253,7 +249,6 @@ header .git_btn span:hover:after {
   justify-content: space-between;
   align-items: center;
 }
-
 .selected-line li svg {
   animation: motion 1s linear infinite;
 }
@@ -267,7 +262,6 @@ header .git_btn span:hover:after {
 }
 
 /*** div2, 메뉴 카테고리 ***/
-
 .main-category {
   width: 100%;
 }
@@ -435,51 +429,8 @@ header .git_btn span:hover:after {
   font-size: 4vw;
   margin-left: 13vw;
 }
-/* .keyword-txt p::after {
-  content: '';
-  border: 1px solid var(--color);
-
-  position: absolute;
-
-  transform: rotate(19deg);
-  width: 0.1vw;
-  height: 5vw;
-  /*margin: 0 1.09vw;
-}
-.keyword-txt p:last-child::after {
-  content: none;
-} */
-
-/*
-.keyword-txt {
-   margin: 50px auto;
-
-  width: 75%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: var(--font-size-101);
-}
-.keyword-txt li {
-  position: relative;
-}
-
-.keyword-txt li::after {
-  content: '';
-  border: 1px solid var(--color);
-
-  position: absolute;
-  transform: rotate(19deg);
-  width: 2px;
-  height: 7vw;
-   margin: 0 28px;
-}
-.keyword-txt li:last-child::after {
-  content: none;
-} */
 
 /***** footer about 페이지 *****/
-
 footer {
   width: 100%;
   height: 50vh;
@@ -491,7 +442,6 @@ footer .about-me {
   justify-content: center;
 }
 footer h1 {
-  /* width: 10%; */
   background: url(./images/footer-img.png) no-repeat 0 50% / contain;
   text-indent: -9999px;
   width: 10vw;
@@ -510,9 +460,7 @@ footer .about-me .about-txt h3 {
   text-transform: uppercase;
   font-family: var(--main-font);
 }
-
 footer .about-me .about-txt .intro {
-  /* width: 75%; */
   font-size: 1.1vw;
   font-family: var(--ko-font);
   line-height: 2;
