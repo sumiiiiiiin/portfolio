@@ -216,8 +216,8 @@ header .header_nav .header_utill img:hover {
   padding-bottom: 80px;
   text-align: center;
 }
+/** video **/
 .main1 .main1-video iframe {
-  /* video */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +316,6 @@ header .header_nav .header_utill img:hover {
   margin-bottom: 70px;
 }
 .greenate .txt-box {
-  /*display: none;*/
   padding: 20px 0;
 }
 .greenate .txt-box h3 {

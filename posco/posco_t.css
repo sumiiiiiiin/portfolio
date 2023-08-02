@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-/* tablet */
+/******** tablet ********/
 
 /***** header *****/
 header {
   padding-top: 1vw;
 }
-/* 햄버거 메뉴 */
+/*** 햄버거 메뉴 ***/
 .menu {
   width: 100%;
   background-color: #fff;

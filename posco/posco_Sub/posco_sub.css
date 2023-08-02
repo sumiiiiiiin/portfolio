@@ -23,8 +23,11 @@ body {
   display: flex;
 }
 .half-highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #77c9ff8a
-  50%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    #77c9ff8a 50%
+  );
 }
 .line {
   border-bottom: 1px solid #929292;
@@ -57,14 +60,12 @@ header .home_btn span {
 header .home_btn span a {
   display: block;
 }
-
 header .home_btn span:hover {
   background: transparent;
   color: #1f2353;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-
 header .home_btn span:before,
 header .home_btn span:after {
   content: '';
@@ -77,7 +78,6 @@ header .home_btn span:after {
   background-color: #1f2353;
   transition: 400ms ease all;
 }
-
 header .home_btn span:after {
   right: inherit;
   top: inherit;
@@ -137,7 +137,6 @@ header .home_btn span:hover:after {
     transform: translateZ(0);
   }
 }
-
 .mainpage .main_intro .main_intro_img .mobile {
   width: 161px;
   height: 317px;
@@ -147,14 +146,12 @@ header .home_btn span:hover:after {
   left: -17%;
 }
 .mainpage .main_intro .main_intro_img .pc {
-  /* width: 527px;
-  height: 388px; */
-  width: 599px;
-  height: 397px;
+  width: 29.95vw;
+  height: 19.85vw;
 }
 .mainpage .main_intro .main_intro_img .tablet {
-  width: 410px;
-  height: 313px;
+  width: 20.5vw;
+  height: 15.65vw;
 
   position: absolute;
   right: -18%;
@@ -196,10 +193,10 @@ header .home_btn span:hover:after {
   color: #1f2353;
   font-size: 2.25vw;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 2.5vw;
 }
 .style .style_txt {
-  margin-top: 100px;
+  margin-top: 5vw;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -207,7 +204,7 @@ header .home_btn span:hover:after {
 .style .style_txt ul .bold {
   font-weight: bold;
   font-size: 1.5vw;
-  margin-bottom: 50px;
+  margin-bottom: 2.5vw;
 }
 .style .style_txt .txt_size {
   font-size: 1.2vw;
@@ -235,7 +232,6 @@ header .home_btn span:hover:after {
   color: #1f2353;
   font-size: 2.25vw;
   font-weight: 700;
-
 }
 .publishing .publishing_txt {
   width: 41%;
@@ -270,7 +266,6 @@ header .home_btn span:hover:after {
   color: #1f2353;
   font-size: 2.25vw;
   font-weight: 700;
-  
 }
 .problem .problem_txt {
   width: 41%;
@@ -298,7 +293,7 @@ header .home_btn span:hover:after {
   font-weight: bold;
 
   position: absolute;
-  right: 34%;
+  right: 33%;
   bottom: 15%;
 }
 .problem .footer_btn span {

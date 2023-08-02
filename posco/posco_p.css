@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/******* pc *******/
+/******** pc ********/
 
 /***** header *****/
 header {
@@ -9,7 +9,6 @@ header {
 
 header .header_nav .menu_nav {
   display: flex;
-  /* align-items: center; */
 }
 header .header_nav .menu_nav li:hover {
   font-weight: bold;
@@ -24,10 +23,8 @@ header .header_nav .header_utill {
 header .header_nav .header_utill img {
   display: flex;
 }
-/* header .header_nav .ham_btn{
-  display: none;
-} */
-/* 햄버거 버튼 */
+
+/*** 햄버거 버튼 ***/
 .hamburger_btn {
   display: none;
 }
@@ -212,7 +209,6 @@ header .header_nav .header_utill img {
 }
 
 /*****footer*****/
-
 .footer .footer-nav li:hover {
   cursor: pointer;
 }
