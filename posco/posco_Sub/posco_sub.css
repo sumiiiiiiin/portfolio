@@ -341,3 +341,18 @@ header .home_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
+
+/*** top_btn ***/
+.top_btn {
+  width: 2vw;
+  height: 2vw;
+  background-color: #1f2353;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+}
+.top_btn a svg {
+  fill: #f2ede4;
+}
