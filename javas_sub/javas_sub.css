@@ -475,7 +475,7 @@ main .img_txt img {
 .top_btn {
   width: 2vw;
   height: 2vw;
-  background-color: #7f9e67;
+  background-color: #000;
   border-radius: 50%;
 
   position: fixed;
