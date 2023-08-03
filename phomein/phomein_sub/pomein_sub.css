@@ -264,8 +264,8 @@ main .img_txt img {
   font-weight: bold;
 
   position: absolute;
-  right: 33%;
-  bottom: 8%;
+  right: 31%;
+  bottom: 20%;
 }
 .problem .footer_btn span {
   text-align: center;
@@ -306,4 +306,19 @@ main .img_txt img {
 .problem .footer_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+/*** top_btn ***/
+.top_btn {
+  width: 2vw;
+  height: 2vw;
+  background-color: #7f9e67;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+}
+.top_btn a svg {
+  fill: #f2ede4;
 }
