@@ -239,14 +239,17 @@ header .header_wrapper .menu_nav .new a {
 }
 /* 설명 아래 btn */
 .phomain button {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.8vw;
+  text-align: center;
+
   width: 8.5vw;
   padding: 0.6vw;
+
   border-radius: 1.2vw;
   background-color: #4d750d;
   border: none;
   color: #fff;
-  font-size: 0.8vw;
-  text-align: center;
   cursor: pointer;
 
   display: inline-block;
@@ -258,7 +261,7 @@ button:after {
   content: '»';
   position: absolute;
   opacity: 0;
-  top: 0.65vw;
+  top: 0.5vw;
   right: -1vw;
   transition: 0.5s;
 }
@@ -615,6 +618,9 @@ button:hover:after {
 .news .date .year {
   font-size: 1vw;
   font-weight: 500;
+}
+.news .news_txt{
+  cursor: pointer;
 }
 .news .news_txt .title {
   font-size: 1.1vw;
