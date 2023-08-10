@@ -77,30 +77,30 @@ header .header_wrapper .menu_nav .new a {
 /* 왼쪽 위 gif */
 .main .bg_video .video_left .left1 {
   height: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: 
     url(./images/main_video1.gif) no-repeat 50% / cover;
-  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }
 /* 왼쪽 아래 gif */
 .main .bg_video .video_left .left2 {
   height: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: 
     url(./images/main_video2.gif) no-repeat 50% / cover;
-  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }
 /* 오른쪽 gif */
 .main .bg_video .video_right {
   width: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: 
     url(./images/main_video3.gif) no-repeat 50% / cover;
-  background-blend-mode: multiply;
 
   text-indent: -9999px;
 }
+/*  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-blend-mode: multiply */
+
 /* gif 위에 텍스트 */
 .main .video_txt {
   position: absolute;
@@ -150,7 +150,7 @@ header .header_wrapper .menu_nav .new a {
 .main .btn .link2:hover::before {
   width: 135%;
 }
-/* 쌀국수 사진 */
+/* gif 위에 쌀국수 사진*/
 .main .main_img {
   width: 35vw;
 
@@ -158,10 +158,12 @@ header .header_wrapper .menu_nav .new a {
   top: 27%;
   left: 45%;
 }
-
-.dark-bg {
-  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+/* main이미지 영역 어둡게 하기 위한 id추가 */
+#brightenImage {
+  filter: brightness(1); /* 이미지를 밝게 만듭니다. */
+  transition: filter 0.5s ease; /* 부드러운 전환을 위한 트랜지션 */
 }
+
 
 /***** section1 소개 3가지 부분 *****/
 
