@@ -126,7 +126,7 @@ main .img_txt .sub_txt .small {
 main .img_txt img {
   width: 40.15vw;
   height: 22.5999vw;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: 7px 5px 6px 2px rgba(166, 166, 166, 0.85);
 }
 
 /***** overview  *****/
@@ -225,7 +225,7 @@ main .img_txt img {
 /***** 문제해결 *****/
 .problem {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   position: relative;
 }
@@ -240,7 +240,8 @@ main .img_txt img {
   font-weight: 700;
 }
 .problem .problem_txt {
-  width: 41%;
+  width: 47%;
+  margin-top: 4vw;
 }
 .problem .problem_txt .txt_box {
   margin-bottom: 5vw;
@@ -253,7 +254,6 @@ main .img_txt img {
 }
 .problem .problem_txt .txt_box p {
   font-size: 0.9vw;
-  margin-left: 1vw;
   margin-bottom: 1vw;
   line-height: 1.8;
 }
@@ -265,8 +265,8 @@ main .img_txt img {
   font-weight: bold;
 
   position: absolute;
-  right: 32%;
-  bottom: 15%;
+  right: 37%;
+  bottom: 12%;
 }
 .problem .footer_btn span {
   text-align: center;
