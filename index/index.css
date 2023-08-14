@@ -16,8 +16,6 @@ header .portfolio_svg svg {
   margin: 0 auto;
 }
 
-/* svg 효과 */
-
 /*** 깃허브 버튼 ***/
 /*
 .dropdown {
@@ -66,7 +64,6 @@ header .portfolio_svg svg {
   display: inline-block;
   margin-left: 6px;
 }
-
 .dropdown > ul {
   position: absolute;
   z-index: 999;
@@ -119,7 +116,7 @@ header .portfolio_svg svg {
   z-index: 1000;
 } */
 
-/* 기존 버튼 */
+/*** 기존 버튼 ***/
 header .git_btn {
   width: 5.35vw;
   font-family: var(--en-font);
@@ -130,7 +127,6 @@ header .git_btn {
   right: 1%;
   top: 2%;
 }
-
 header .git_btn span {
   text-align: center;
   background-color: #7f9e67;
@@ -143,14 +139,12 @@ header .git_btn span {
 header .git_btn span a {
   display: block;
 }
-
 header .git_btn span:hover {
   background: transparent;
   color: #7f9e67;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-
 header .git_btn span:before,
 header .git_btn span:after {
   content: '';
@@ -163,7 +157,6 @@ header .git_btn span:after {
   background-color: #7f9e67;
   transition: 400ms ease all;
 }
-
 header .git_btn span:after {
   right: inherit;
   top: inherit;
@@ -175,6 +168,7 @@ header .git_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
+
 
 /***** main *****/
 .main-txt {
