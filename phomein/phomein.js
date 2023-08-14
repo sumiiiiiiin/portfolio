@@ -43,6 +43,6 @@ observer.observe(sideIntro);
 // 페이지 로딩 시 실행될 코드
   window.addEventListener('load', function() {
   setTimeout(function() {
-    document.getElementById('brightenImage').style.filter = 'brightness(0.4)';
-    }, 700); // 몇초 후에 이미지 밝기 조절
+    document.getElementById('brightenImage').style.filter = 'brightness(0.5)';
+    }, 300); // 몇초 후에 이미지 밝기 조절
 });

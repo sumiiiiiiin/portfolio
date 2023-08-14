@@ -52,7 +52,7 @@
   <main class="line">
     <div class="main_intro layout-wrapper">
 
-      <h1>Solo project Web design </h1>
+      <h1>Personal project Web design </h1>
       <p>(JavaScript / JQuery)</p>
 
       <div class="img_txt flex">
@@ -153,26 +153,38 @@
       <h1>Problems & Solution </h1>
 
       <div class="problem_txt">
-        <div class="video" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="txt_box" data-aos="fade-left" data-aos-duration="1000">
           <h3>1. 양쪽 영역의 hover 시 이미지가 같이 움직이는 문제 발생.</h3>
           <p>각 영역 hover 시 영역의 width 값만 변경되는데 해당 영역에 위치한 이미지가 변경된 width 값만큼 같이 움직이는 문제가 발생<br>
             width:auto 와 transform: translate() 값으로 위치 조절 후 해결함</p>
         </div>
 
-        <!-- <div class="green" data-aos="fade-left" data-aos-duration="1000">
-          <h3>2. 녹색지구 section 각각의 박스 hover 시 아래에서 나타나는 배경색이 사진의 크기에 맞지 않는 문제가 발생함.</h3>
-          <p>html에서의 img tag에 사용한 <span class="half-highlight">이미지 사이즈의 비율이 1 : 1이 아니어서</span> 문제가 발생하였으므로 사이즈
-            수정 후 해결함</p>
-        </div> -->
+        <div class="txt_box" data-aos="fade-left" data-aos-duration="1000">
+          <h3>2. 메인 첫 화면에서 텍스트의 AOS가 실행될 때 3개의 백그라운드 gif가 어두워져야 하는데 실행되지 않는 문제 발생.</h3>
+          <p>3개의 gif를 background: url()로 삽입하였고 linear-gradient(rgba(0, 0, 0, 0.5)),
+            background-blend-mode: multiply로 어두워지도록 css 값을 주었으나 처음부터 어두운 상태인 문제점이 발생하였고 JavaScript로 문제를 해결</p>
+          <p>
+            따라서 객체의 'load' 이벤트를 기다리는 이벤트 리스너를 설정, 이벤트 리스너 함수 내부에서 setTimeout 함수를 사용, setTimeout 함수는 지정한 시간이 경과한 후 특정 함수를
+            실행할 수 있게 해주고 setTimeout의 두 번째 인자는 함수가 실행되기 전의 지연 시간을 밀리초로 실행되도록 설정, 'brightness(0.5)'; 적용하여 요소의 밝기를 조절하여 문제를
+            해결함
+          </p>
+        </div>
+
       </div>
 
     </div>
 
     <!-- 사이트보러가기 btn -->
     <div class="footer_btn">
-      <span> <a href="../phomein.html" target="_blank">사이트 보러가기</a></span>
+      <span> <a href="../phomein.html" target="_blank">사이트 보러 가기</a></span>
     </div>
   </div>
+
+  </div>
+
+
+
 
   <!-- top_btn -->
   <div class="top_btn">

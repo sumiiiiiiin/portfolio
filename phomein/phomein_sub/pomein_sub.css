@@ -225,7 +225,7 @@ main .img_txt img {
 /***** 문제해결 *****/
 .problem {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
 
   position: relative;
 }
@@ -241,20 +241,21 @@ main .img_txt img {
 }
 .problem .problem_txt {
   width: 41%;
-  padding-top: 0.2vw;
 }
-.problem .problem_txt .green {
-  margin: 5vw 0;
+.problem .problem_txt .txt_box {
+  margin-bottom: 5vw;
 }
-.problem .problem_txt h3 {
-  font-size: 1.2vw;
+.problem .problem_txt .txt_box h3 {
+  font-size: 1.1vw;
   font-weight: bold;
   margin-bottom: 1vw;
+  text-indent: -20px;
 }
-.problem .problem_txt p {
-  font-size: 1vw;
+.problem .problem_txt .txt_box p {
+  font-size: 0.9vw;
   margin-left: 1vw;
-  line-height: 1.6;
+  margin-bottom: 1vw;
+  line-height: 1.8;
 }
 
 /***** 사이트보러가기 btn *****/
@@ -264,8 +265,8 @@ main .img_txt img {
   font-weight: bold;
 
   position: absolute;
-  right: 31%;
-  bottom: 20%;
+  right: 32%;
+  bottom: 15%;
 }
 .problem .footer_btn span {
   text-align: center;

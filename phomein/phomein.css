@@ -77,25 +77,19 @@ header .header_wrapper .menu_nav .new a {
 /* 왼쪽 위 gif */
 .main .bg_video .video_left .left1 {
   height: 50%;
-  background: 
-    url(./images/main_video1.gif) no-repeat 50% / cover;
-
+  background: url(./images/main_video1.gif) no-repeat 50% / cover;
   text-indent: -9999px;
 }
 /* 왼쪽 아래 gif */
 .main .bg_video .video_left .left2 {
   height: 50%;
-  background: 
-    url(./images/main_video2.gif) no-repeat 50% / cover;
-
+  background: url(./images/main_video2.gif) no-repeat 50% / cover;
   text-indent: -9999px;
 }
 /* 오른쪽 gif */
 .main .bg_video .video_right {
   width: 50%;
-  background: 
-    url(./images/main_video3.gif) no-repeat 50% / cover;
-
+  background: url(./images/main_video3.gif) no-repeat 50% / cover;
   text-indent: -9999px;
 }
 /*  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -166,7 +160,6 @@ header .header_wrapper .menu_nav .new a {
 
 
 /***** section1 소개 3가지 부분 *****/
-
 /*** 이미지사이즈 ***/
 .phomain .intro img {
   width: 24.3vw;
