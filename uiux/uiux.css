@@ -399,7 +399,6 @@ main .main_intro .main_intro_img img {
 .prototype {
   width: 100%;
   height: 360vh;
-  /* height: 100%; */
 }
 .prototype .prototype_intro{
   margin-top: 5vw;
@@ -450,7 +449,7 @@ main .main_intro .main_intro_img img {
 /***** review *****/
 .review {
   width: 100%;
-  height: 147vh;
+  height: 140vh;
 
   position: relative;
 }
@@ -461,50 +460,39 @@ main .main_intro .main_intro_img img {
   color: #4d6cff;
   font-weight: 800;
   font-size: 2.25vw;
-  margin-bottom: 5vw;
+  margin-bottom: 7vw;
 }
-.review .review_txt{
-  padding: 0 4vw;
-}
-.review .review_txt .review_box {
-  margin-bottom: 4vw;
-
+.review .review_box {
   justify-content: space-between;
   align-items: flex-start;
+
+  margin-bottom: 6vw;
+  padding: 0 2vw;
 }
-.review .review_txt .review_box:last-child{
-  margin-bottom: 0;
-}
-.review .review_txt .review_box h2 {
+.review .review_box h2 {
   font-size: 1.2vw;
-  font-weight: 700;
+  font-weight: 800;
 }
-.review .review_txt .review_box ul {
-  width: 50%;
-  font-size: 0.9vw;
+.review .review_box .box_right {
+  width: 52%;
+  font-size: 1vw;
+  line-height: 1.6;
 }
-.review .review_txt .review_box ul:last-child{
-  margin-bottom: 0;
-}
-.review .review_txt .review_box ul li {
-  line-height: 2;
-}
-.review .review_txt .review_box:last-child ul li {
-  list-style: none;
+.review .review_box .box_right p{
   margin-bottom: 1vw;
 }
 
 /***** 발표 pdf 보러가기 btn *****/
-.review .footer_btn {
+.review .site_btn {
   width: 12vw;
   text-transform: uppercase;
   font-weight: bold;
 
   position: absolute;
-  right: 38%;
-  bottom: 15%;
+  right: 39%;
+  bottom: 10%;
 }
-.review .footer_btn span {
+.review .site_btn span {
   text-align: center;
   background-color: #4d6cff;
   color: #fff;
@@ -513,17 +501,17 @@ main .main_intro .main_intro_img img {
   line-height: 2.35vw;
   display: block;
 }
-.review .footer_btn span a {
+.review .site_btn span a {
   display: block;
 }
-.review .footer_btn span:hover {
+.review .site_btn span:hover {
   background: transparent;
   color: #4d6cff;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-.review .footer_btn span:before,
-.review .footer_btn span:after {
+.review .site_btn span:before,
+.review .site_btn span:after {
   content: '';
   position: absolute;
   top: 0;
@@ -533,17 +521,18 @@ main .main_intro .main_intro_img img {
   background-color: #4d6cff;
   transition: 400ms ease all;
 }
-.review .footer_btn span:after {
+.review .site_btn span:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.review .footer_btn span:hover:before,
-.review .footer_btn span:hover:after {
+.review .site_btn span:hover:before,
+.review .site_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
+
 
 /*** top_btn ***/
 .top_btn {
