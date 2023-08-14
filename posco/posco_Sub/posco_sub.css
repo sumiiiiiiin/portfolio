@@ -275,6 +275,7 @@ header .home_btn span:hover:after {
   margin: 5vw 0;
 }
 .problem .problem_txt h3 {
+  text-indent: -1.2vw;
   font-size: 1.2vw;
   font-weight: bold;
   margin-bottom: 1vw;
@@ -293,7 +294,7 @@ header .home_btn span:hover:after {
   font-weight: bold;
 
   position: absolute;
-  right: 33%;
+  right: 35%;
   bottom: 15%;
 }
 .problem .footer_btn span {

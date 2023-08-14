@@ -9,6 +9,8 @@ header {
 
 header .header_nav .menu_nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .header_nav .menu_nav li:hover {
   font-weight: bold;
@@ -150,11 +152,13 @@ header .header_nav .header_utill img {
   background-size: 80%;
 }
 .posco-asia-img-box .left:hover {
+  cursor: pointer;
   transform: translatey(-10px);
   transition: 0.8s;
-  box-shadow: 5px 5px 10px #77c9ff;
+  /* box-shadow: 5px 5px 10px #77c9ff; */
 }
 .posco-asia-img-box .right li {
+  cursor: pointer;
   background-size: 20%;
   padding: 40px;
   margin: 18px;
@@ -168,7 +172,7 @@ header .header_nav .header_utill img {
 .posco-asia-img-box .right li:hover {
   transform: translateX(10px);
   transition: 0.8s;
-  box-shadow: 3px 4px 10px#77c9ff;
+  /* box-shadow: 3px 4px 10px#77c9ff; */
 }
 
 /*****철강사 section4*****/
@@ -194,19 +198,21 @@ header .header_nav .header_utill img {
 }
 .global .global-txt ul li:nth-child(1):hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 .global p {
   position: absolute;
   bottom: 25%;
   right: 10%;
+
+  cursor: pointer;
 }
-.global p:hover {
+/* .global p:hover {
   width: 180px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-}
+} */
 
 /*****footer*****/
 .footer .footer-nav li:hover {
