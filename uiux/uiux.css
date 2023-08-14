@@ -318,7 +318,7 @@ main .main_intro .main_intro_img img {
 /***** 문제해결 *****/
 .problem {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 .problem .problem_intro {
   margin-top: 5vw;
@@ -340,7 +340,11 @@ main .main_intro .main_intro_img img {
   font-size: 1.8vw;
   padding-left: 3vw;
 }
+.problem .txt_box ul {
+  width: 50%;
+}
 .problem .txt_box ul li {
+  font-size: 0.9vw;
   list-style: decimal;
   line-height: 2.6;
 }
@@ -394,7 +398,11 @@ main .main_intro .main_intro_img img {
 /***** prototype *****/
 .prototype {
   width: 100%;
-  height: 100%;
+  height: 360vh;
+  /* height: 100%; */
+}
+.prototype .prototype_intro{
+  margin-top: 5vw;
 }
 .prototype img {
   width: 14.249vw;
@@ -404,7 +412,7 @@ main .main_intro .main_intro_img img {
   color: #4d6cff;
   font-weight: 800;
   font-size: 2.25vw;
-  margin: 5vw 0;
+  margin-bottom: 7vw;
 }
 .prototype .prototype_intro .prototype_index {
   padding: 0 5vw;
@@ -442,7 +450,7 @@ main .main_intro .main_intro_img img {
 /***** review *****/
 .review {
   width: 100%;
-  height: 140vh;
+  height: 147vh;
 
   position: relative;
 }
@@ -455,13 +463,17 @@ main .main_intro .main_intro_img img {
   font-size: 2.25vw;
   margin-bottom: 5vw;
 }
+.review .review_txt{
+  padding: 0 4vw;
+}
 .review .review_txt .review_box {
-  margin-bottom: 5vw;
-  padding: 0 5vw;
+  margin-bottom: 4vw;
 
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.review .review_txt .review_box:last-child{
+  margin-bottom: 0;
 }
 .review .review_txt .review_box h2 {
   font-size: 1.2vw;
@@ -469,17 +481,20 @@ main .main_intro .main_intro_img img {
 }
 .review .review_txt .review_box ul {
   width: 50%;
-  margin-bottom: 3vw;
+  font-size: 0.9vw;
+}
+.review .review_txt .review_box ul:last-child{
+  margin-bottom: 0;
 }
 .review .review_txt .review_box ul li {
   line-height: 2;
 }
 .review .review_txt .review_box:last-child ul li {
   list-style: none;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
-/***** footer 사이트보러가기 btn *****/
+/***** 발표 pdf 보러가기 btn *****/
 .review .footer_btn {
   width: 12vw;
   text-transform: uppercase;
@@ -487,7 +502,7 @@ main .main_intro .main_intro_img img {
 
   position: absolute;
   right: 38%;
-  bottom: 10%;
+  bottom: 15%;
 }
 .review .footer_btn span {
   text-align: center;
@@ -501,14 +516,12 @@ main .main_intro .main_intro_img img {
 .review .footer_btn span a {
   display: block;
 }
-
 .review .footer_btn span:hover {
   background: transparent;
   color: #4d6cff;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-
 .review .footer_btn span:before,
 .review .footer_btn span:after {
   content: '';
@@ -520,7 +533,6 @@ main .main_intro .main_intro_img img {
   background-color: #4d6cff;
   transition: 400ms ease all;
 }
-
 .review .footer_btn span:after {
   right: inherit;
   top: inherit;
