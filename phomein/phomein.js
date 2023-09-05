@@ -44,5 +44,5 @@ observer.observe(sideIntro);
   window.addEventListener('load', function() {
   setTimeout(function() {
     document.getElementById('brightenImage').style.filter = 'brightness(0.5)';
-    }, 300); // 몇초 후에 이미지 밝기 조절
+    }, 600); // 몇초 후에 이미지 밝기 조절
 });

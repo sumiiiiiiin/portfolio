@@ -342,8 +342,11 @@ button:hover:after {
   bottom: 0;
   right: 0;
 }
-/* 이미지 움직임 animation*/
+/*** 이미지 움직임 animation ***/
+/* 왼쪽 영역 이미지 크기, 위치 */
 .left_img {
+  width: 25vw;
+  height: 28vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -358,10 +361,14 @@ button:hover:after {
     transform: translate(30%, 30%) scale(1.4);
   }
   100% {
-    transform: translate(130%, 44%) scale(1);
+    /* transform: translate(130%, 44%) scale(1); */
+    transform: translate(113%, 42%) scale(1);
   }
 }
+/* 오른쪽 영역 이미지 크기, 위치 */
 .right_img {
+  width: 25vw;
+  height: 29.6vw;
   position: absolute;
   top: 0;
   right: 0;
@@ -372,15 +379,17 @@ button:hover:after {
 }
 @keyframes move2 {
   0% {
-    transform: translate(-30%, 30%) scale(1.4);
+    transform: translate(-30%, 30%) scale(1.4)
   }
   100% {
-    transform: translate(-120%, 38%) scale(1);
+    /* transform: translate(-120%, 38%) scale(1); */
+    transform: translate(-105%, 35.5%) scale(1);
   }
 }
 .side_left:hover,
 .side_right:hover {
-  width: 140%;
+  /* width: 140%; */
+  width: 98%;
   transition: 1.3s;
 }
 
