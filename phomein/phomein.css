@@ -383,13 +383,13 @@ button:hover:after {
   }
   100% {
     /* transform: translate(-120%, 38%) scale(1); */
-    transform: translate(-105%, 35.5%) scale(1);
+    transform: translate(-106%, 35.5%) scale(1);
   }
 }
 .side_left:hover,
 .side_right:hover {
   /* width: 140%; */
-  width: 98%;
+  width: 100%;
   transition: 1.3s;
 }
 
